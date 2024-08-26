@@ -1,12 +1,16 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 const FadingImage = styled(Box)`
   transition: opacity 0.5s ease-in-out;
 `;
 
 const Honda = () => {
+  const { t, i18n } = useTranslation();
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -20,6 +24,7 @@ const Honda = () => {
   return (
     <>
       <Hidden only={"lg"}>
+        <NavBar/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -31,13 +36,13 @@ const Honda = () => {
         </Box>
 
         <Box
-          pt={7}
+          pt={5}
           mt={-1}
           sx={{
             backgroundColor: "#E11F27",
             display: "flex",
             width: "100%",
-            height: "141px",
+            height: "102px",
             justifyContent: "space-around",
           }}
         >
@@ -46,12 +51,12 @@ const Honda = () => {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "400",
-                fontSize: "28px",
+                fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "#FFFFFF",
               }}
             >
-              Cliente: <strong>Honda Argentina</strong>
+             {t("clienteProyectos")}: <strong>Honda Argentina</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -59,13 +64,12 @@ const Honda = () => {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "400",
-                fontSize: "28px",
+                fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "#FFFFFF",
-                width:"430px"
               }}
             >
-              Proyecto: <strong>Anuario institucional</strong>
+             {t("proyecto")}: <strong>Anuario institucional</strong>
             </Typography>
           </Box>
           <Box>
@@ -73,12 +77,12 @@ const Honda = () => {
               sx={{
                 fontFamily: "Inter",
                 fontWeight: "400",
-                fontSize: "28px",
+                fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "#FFFFFF",
               }}
             >
-              Año: <strong>2018</strong>
+             {t("fecha")}: <strong>2018</strong>
             </Typography>
           </Box>
         </Box>
@@ -198,6 +202,7 @@ const Honda = () => {
       </Hidden>
 
       <Hidden only={"xl"}>
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -229,7 +234,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-              Cliente: <strong>Honda Argentina</strong>
+             {t("clienteProyectos")}: <strong>Honda Argentina</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -242,7 +247,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-              Proyecto: <strong>Anuario institucional</strong>
+             {t("proyecto")}: <strong>Anuario institucional</strong>
             </Typography>
           </Box>
           <Box>
@@ -255,7 +260,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-              Año: <strong>2018</strong>
+             {t("fecha")}: <strong>2018</strong>
             </Typography>
           </Box>
         </Box>

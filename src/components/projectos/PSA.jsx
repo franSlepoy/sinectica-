@@ -1,6 +1,9 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
@@ -91,6 +94,7 @@ const FadingImage6 = styled(Box)`
 `;
 
 const PSA = () => {
+  const { t, i18n } = useTranslation();
   const [imageIndices, setImageIndices] = useState([0, 0, 0]);
   const [showSecondImage, setShowSecondImage] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
@@ -154,7 +158,9 @@ const PSA = () => {
 
   return (
     <>
+  
       <Hidden only={"lg"}>
+     
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -186,7 +192,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-              Cliente: <strong>PSA Peugeot Citroën</strong>
+               {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -201,7 +207,7 @@ const PSA = () => {
                 ml: -5,
               }}
             >
-              Proyecto: <strong>Programa de comunicación </strong>
+             {t("proyecto")}: <strong>Programa de comunicación </strong>
             </Typography>
           </Box>
           <Box>
@@ -214,7 +220,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-              Año: <strong>2010 - 2020</strong>
+               {t("fecha")}: <strong>2010 - 2020</strong>
             </Typography>
           </Box>
         </Box>
@@ -644,6 +650,7 @@ const PSA = () => {
       </Hidden>
       <Hidden only={"xl"}>
         <Box>
+        <NavBar1/>
           <img
             style={{ objectFit: "cover" }}
             height={"696px"}
@@ -674,7 +681,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-              Cliente: <strong>PSA Peugeot Citroën</strong>
+               {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -687,7 +694,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-              Proyecto: <strong>Programa de comunicación interna</strong>
+               {t("proyecto")}: <strong>Programa de comunicación interna</strong>
             </Typography>
           </Box>
           <Box>
@@ -700,7 +707,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-              Año: <strong>2010 - 2020</strong>
+              {t("fecha")}: <strong>2010 - 2020</strong>
             </Typography>
           </Box>
         </Box>

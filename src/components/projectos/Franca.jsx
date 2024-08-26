@@ -1,6 +1,9 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
@@ -65,6 +68,7 @@ const ScrollableImageContainer1 = styled(Box)`
 `;
 
 const Franca = () => {
+  const { t, i18n } = useTranslation();
   const [imageIndices, setImageIndices] = useState([0, 0, 0]);
 
   const imageSets = [
@@ -110,7 +114,9 @@ const Franca = () => {
 
   return (
     <>
+
       <Hidden lgDown>
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -142,7 +148,7 @@ const Franca = () => {
                 color: "black",
               }}
             >
-              Cliente: <strong>Franca</strong>
+              {t("clienteProyectos")}: <strong>Franca</strong>
             </Typography>
           </Box>
           <Box ml={8} width={"300px"}>
@@ -155,7 +161,7 @@ const Franca = () => {
                 color: "black",
               }}
             >
-              Proyecto: <strong>E-Commerce</strong>
+             {t("proyecto")}: <strong>E-Commerce</strong>
             </Typography>
           </Box>
           <Box>
@@ -168,7 +174,7 @@ const Franca = () => {
                 color: "black",
               }}
             >
-              Año: <strong>2024</strong>
+              {t("fecha")}: <strong>2024</strong>
             </Typography>
           </Box>
         </Box>

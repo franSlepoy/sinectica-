@@ -1,6 +1,8 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
 
 const FadingImage = styled(Box)`
   position: absolute;
@@ -10,6 +12,7 @@ const FadingImage = styled(Box)`
 `;
 
 const SanMartin = () => {
+  const { t, i18n } = useTranslation();
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -67,6 +70,7 @@ const SanMartin = () => {
   return (
     <>
       <Hidden lgDown>
+        <NavBar/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -98,7 +102,7 @@ const SanMartin = () => {
                 color: "black",
               }}
             >
-              Cliente: <strong>Municipalidad de San Martín</strong>
+               {t("clienteProyectos")}: <strong>Municipalidad de San Martín</strong>
             </Typography>
           </Box>
           <Box width={"550px"}>
@@ -111,7 +115,7 @@ const SanMartin = () => {
                 color: "black",
               }}
             >
-              Proyecto: <strong>Libro #JuntasLibresIguales</strong>
+             {t("proyecto")}: <strong>Libro #JuntasLibresIguales</strong>
             </Typography>
           </Box>
           <Box>
@@ -124,7 +128,7 @@ const SanMartin = () => {
                 color: "black",
               }}
             >
-              Año: <strong>2022</strong>
+              {t("fecha")}: <strong>2022</strong>
             </Typography>
           </Box>
         </Box>

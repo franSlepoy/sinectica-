@@ -1,5 +1,8 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled, keyframes } from "@mui/system";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 /*  const typing = keyframes`
   0% { width: 0; }
@@ -92,9 +95,11 @@ const FloatingImage1 = styled("img")`
 `;
 
 const Tyme = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Hidden lgDown>
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -180,7 +185,7 @@ const Tyme = () => {
                 color: "black",
               }}
             >
-              Cliente: <strong>Tyme </strong>
+               {t("clienteProyectos")}: <strong>Tyme </strong>
             </Typography>
           </Box>
           <Box ml={8} width={"300px"}>
@@ -198,7 +203,7 @@ const Tyme = () => {
                 style={{ color: "black", textDecoration: "none" }}
                 href="https://www.tyme-consulting.com/"
               >
-                Proyecto: <strong>Sitio Web</strong>
+                {t("proyecto")}: <strong>Sitio Web</strong>
               </a>
             </Typography>
           </Box>
@@ -212,7 +217,7 @@ const Tyme = () => {
                 color: "black",
               }}
             >
-              Año: <strong>2024</strong>
+            {t("fecha")}: <strong>2024</strong>
             </Typography>
           </Box>
         </Box>

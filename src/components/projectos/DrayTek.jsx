@@ -1,6 +1,9 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 const floatAnimation = `
   @keyframes floatAnimation {
@@ -91,6 +94,7 @@ const AnimatedImage = styled("img")`
 const DrayTek = () => {
   const [showAdditionalImages, setShowAdditionalImages] = useState(false);
   const [showFinalImages, setShowFinalImages] = useState(true);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -101,7 +105,9 @@ const DrayTek = () => {
 
   return (
     <>
+    
       <Hidden lgDown>
+        <NavBar1/>
         <Box>
           <img
             width={"100%"}
@@ -157,7 +163,7 @@ const DrayTek = () => {
                 color: "#FFFFFF",
               }}
             >
-              Cliente: <strong> Draytek</strong>
+              {t("clienteProyectos")}  : <strong> Draytek</strong>
             </Typography>
           </Box>
           <Box width={"220px"}>
@@ -170,7 +176,7 @@ const DrayTek = () => {
                 color: "#FFFFFF",
               }}
             >
-              Proyecto: <strong>Página web</strong>
+            {t("proyecto")}: <strong>Página web</strong>
             </Typography>
           </Box>
           <Box>
@@ -183,7 +189,7 @@ const DrayTek = () => {
                 color: "#FFFFFF",
               }}
             >
-              Año: <strong>2024</strong>
+            {t("fecha")}: <strong>2024</strong>
             </Typography>
           </Box>
         </Box>

@@ -14,11 +14,13 @@ import SanMartin from "./components/projectos/SanMartin";
 import SanMartin1 from "./components/projectos/SanMartin1";
 import Tyme from "./components/projectos/Tyme";
 import Home from "./components/Home";
+import './i18nextConfig'
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/proyectos" element={<Projectos />} />
