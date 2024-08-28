@@ -1,22 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
 
-const floatAnimation = `
-  @keyframes floatAnimation {
-    0% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-5px) rotate(0.5deg); }
-    50% { transform: translateY(0) rotate(-0.5deg); }
-    75% { transform: translateY(5px) rotate(0.25deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-  }
-`;
 
-const FloatingImage = styled("img")`
-  ${floatAnimation}
-  animation: floatAnimation 3s ease-in-out infinite;
-`;
+
+ 
+
+
 
 const AdditionalImagesContainer = styled(Box)`
   display: flex;
@@ -68,7 +58,7 @@ const ObrasPublicas = () => {
     <>
       <Box>
         <img
-          height={"856px"}
+           height={"696px"}
           width={"100%"}
           src="/obrasPublicas/obras1.png"
           alt="imágen autopistas"
@@ -80,12 +70,7 @@ const ObrasPublicas = () => {
         top={"280px"}
         left={"35%"}
       >
-        <ScrollLink to="seccionDestino" smooth={true}>
-          <FloatingImage
-            src="/obrasPublicas/obras.png"
-            alt="Logo de Ministerio de Obras públicas"
-          />
-        </ScrollLink>
+      
       </Box>
 
       <Box
@@ -175,13 +160,13 @@ const ObrasPublicas = () => {
 
       <Box display={"flex"} justifyContent={"space-evenly"} bgcolor={"white"}>
         <Box mt={5}>
-          <FloatingImage
+          <img
             src="/obrasPublicas/obras6.png"
             alt="imagen de bras públicas"
           />
         </Box>
         <Box mt={7}>
-          <FloatingImage
+          <img
             width={"96%"}
             src="/obrasPublicas/obras7.png"
             alt="imagen de bras públicas"
@@ -190,7 +175,7 @@ const ObrasPublicas = () => {
       </Box>
       <Box display={"flex"} justifyContent={"center"} bgcolor={"white"}>
         <Box mt={2} pb={4}>
-          <FloatingImage
+          <img
             src="/obrasPublicas/obras8.png"
             alt="imagen de bras públicas"
           />

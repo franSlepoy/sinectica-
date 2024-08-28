@@ -1,35 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
-
-const floatAnimation = `
-  @keyframes floatAnimation {
-    0% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-5px) rotate(0.5deg); }
-    50% { transform: translateY(0) rotate(-0.5deg); }
-    75% { transform: translateY(5px) rotate(0.25deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-  }
-`;
-
-const FloatingImage = styled("img")`
-  ${floatAnimation}
-  animation: floatAnimation 3s ease-in-out infinite;
-`;
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
-  top: 1106px;
-  left: 18%;
-  width: 65%;
-  height: 580px; // Adjust height as needed
+  /* top: 1106px;
+  left: 18%; */
+  /* width: 65%;
+  height: 580px; */ // Adjust height as needed
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
   // Custom scrollbar styles
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 7px;
   }
 
   &::-webkit-scrollbar-track {
@@ -87,21 +71,12 @@ const honda1 = () => {
     <>
       <Box>
         <img
-          height={"856px"}
+          style={{ objectFit: "cover" }}
+          height={"696px"}
           width={"100%"}
           src="/honda1/honda1-1.png"
           alt="taller de Honda"
         />
-      </Box>
-      <Box
-        sx={{ cursor: "pointer" }}
-        position={"absolute"}
-        top={"140px"}
-        left={"29%"}
-      >
-        <ScrollLink to="seccionDestino" smooth={true}>
-          <FloatingImage src="/honda/honda.png" alt="honda" />
-        </ScrollLink>
       </Box>
 
       <Box
@@ -156,35 +131,47 @@ const honda1 = () => {
           </Typography>
         </Box>
       </Box>
-      <Box width={"100%"}>
-        <img
-          height={"1000px"}
-          width={"100%"}
-          src="/honda1/honda1-2.png"
-          alt="computadora"
-        />
+      <Box width={"100%"} bgcolor={"white"}>
+        <Box width="80%" m={"auto"}>
+          {" "}
+          <img width={"100%"} src="/honda1/honda1-2.png" alt="" />{" "}
+        </Box>
       </Box>
-      <ScrollableImageContainer>
-        <img width={"100%"} src="/honda1/honda1-3.png" alt="" />
+      <ScrollableImageContainer
+        sx={{
+          position: "absolute",
+          left: "49.8%",
+          top: "905px",
+          transform: "translateX(-50%)",
+          width: "818px",
+          height: "512px",
+        }}
+      >
+        <img
+          width={"810px"}
+          style={{ objectFit: "cover" }}
+          src="/honda1/honda1-3.png"
+          alt=""
+        />
       </ScrollableImageContainer>
 
       <Box mt={-1} display={"flex"} bgcolor={"#F0F0F0"}>
         <Box mt={10} ml={10}>
-          <FloatingImage src="/honda1/honda1-4.png" alt="honda" />
+          <img src="/honda1/honda1-4.png" alt="honda" />
         </Box>
         <Box mt={2} ml={8}>
-          <FloatingImage src="/honda1/honda1-5.png" alt="honda" />
+          <img src="/honda1/honda1-5.png" alt="honda" />
         </Box>
         <Box mt={10} ml={8}>
-          <FloatingImage src="/honda1/honda1-6.png" alt="honda" />
+          <img src="/honda1/honda1-6.png" alt="honda" />
         </Box>
       </Box>
       <Box display={"flex"} bgcolor={"#F0F0F0"}>
         <Box mt={18} ml={20}>
-          <FloatingImage src="/honda1/honda1-7.png" alt="honda" />
+          <img src="/honda1/honda1-7.png" alt="honda" />
         </Box>
         <Box mt={10} ml={20}>
-          <FloatingImage src="/honda1/honda1-8.png" alt="honda" />
+          <img src="/honda1/honda1-8.png" alt="honda" />
         </Box>
       </Box>
       <Box mt={-12}>
@@ -200,45 +187,29 @@ const honda1 = () => {
         onMouseEnter={() => setShowAdditionalImages(true)}
         onMouseLeave={() => setShowAdditionalImages(false)}
         position={"absolute"}
-        top={"3400px"} // Ajusta la posición según sea necesario
+        top={"2980px"} // Ajusta la posición según sea necesario
         left={"76%"} // Ajusta la posición según sea necesario
         sx={{ cursor: "pointer" }}
       >
-        <FloatingImage src="/honda1/honda1-10.png" alt="honda" />
+        <img src="/honda1/honda1-10.png" alt="honda" />
       </Box>
 
       {showAdditionalImages && (
         <>
-          <Box position={"absolute"} top={"3400px"} left={"6%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-11.png"
-              alt="honda"
-            />
+          <Box position={"absolute"} top={"3000px"} left={"6%"}>
+            <img width={"80%"} src="/honda1/honda1-11.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"3350px"} left={"40%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-12.png"
-              alt="honda"
-            />
+          <Box position={"absolute"} top={"3150px"} left={"40%"}>
+            <img width={"80%"} src="/honda1/honda1-12.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"3700px"} left={"74%"}>
-            <FloatingImage src="/honda1/honda1-13.png" alt="honda" />
+          <Box position={"absolute"} top={"3200px"} left={"74%"}>
+            <img src="/honda1/honda1-13.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"3780px"} left={"20%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-14.png"
-              alt="honda"
-            />
+          <Box position={"absolute"} top={"3280px"} left={"20%"}>
+            <img width={"80%"} src="/honda1/honda1-14.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"3880px"} left={"54%"}>
-            <FloatingImage
-              width={"80%"}
-              src="/honda1/honda1-15.png"
-              alt="honda"
-            />
+          <Box position={"absolute"} top={"3000px"} left={"54%"}>
+            <img width={"80%"} src="/honda1/honda1-15.png" alt="honda" />
           </Box>
         </>
       )}

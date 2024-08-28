@@ -1,9 +1,12 @@
 import { Box, Hidden, Typography } from "@mui/material";
+import NavBar1 from "../NavBar/NavBar1";
 
 const Tn = () => {
   return (
     <>
       <Hidden lgDown>
+
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}

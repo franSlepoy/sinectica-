@@ -51,7 +51,7 @@ const NavBar1 = () => {
     <>
       <Box
         position={"absolute"}
-        top={30}
+        top={0}
         width={"100%"}
         height={"60px"}
         m={"auto"}
@@ -66,7 +66,7 @@ const NavBar1 = () => {
           bgcolor={"transparent"}
           display={"flex"}
           position={"absolute"}
-          sx={{ top: "5%" }}
+        
           width={"100%"}
           m={"auto"}
           height={"120px"} // Altura mayor para las esferas
