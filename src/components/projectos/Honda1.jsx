@@ -140,15 +140,15 @@ const honda1 = () => {
       <ScrollableImageContainer
         sx={{
           position: "absolute",
-          left: "49.8%",
-          top: "905px",
+          left: "50%",
+          top: "890px",
           transform: "translateX(-50%)",
-          width: "818px",
+          width: "832px",
           height: "512px",
         }}
       >
         <img
-          width={"810px"}
+          width={"828px"}
           style={{ objectFit: "cover" }}
           src="/honda1/honda1-3.png"
           alt=""

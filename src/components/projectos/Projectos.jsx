@@ -14,7 +14,7 @@ const ProjectCard = styled(Box)`
 
 const ProjectImage = styled("img")`
   width: 100%;
-  height: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -49,123 +49,120 @@ const Button = styled("button")`
 const projectsData = [
   {
     id: 1,
-    title: "PSA Peugeot Citroën",
-    category: "Digital",
-    img1: "/proyectos/proyecto1.png",
-    img2: "/proyectos/proyecto1Hover.png",
-    link: "/PSA",
-  },
-  {
-    id: 2,
     title: "Franca",
     category: "Digital",
-    img1: "/proyectos/proyecto2.png",
+    img1: "/proyectos/proyecto1.png",
     img2: "/proyectos/proyecto1Hover.png",
     link: "/Franca",
   },
   {
-    id: 3,
-    title: "DrayTek",
+    id: 2,
+    title: "circulo",
     category: "Digital",
+    img1: "/proyectos/proyecto2.png",
+    img2: "/proyectos/proyecto2Hover.png",
+  },
+  {
+    id: 3,
+    title: "Obras Publicas",
+    category: "Editorial",
     img1: "/proyectos/proyecto3.png",
-    img2: "/proyectos/proyecto5Hover.png",
+    img2: "/proyectos/proyecto3Hover.png",
     link: "/DrayTek",
   },
   {
     id: 4,
-    title: "IMB",
-    category: "Editorial",
+    title: "TnPlatex",
+    category: "Digital",
     img1: "/proyectos/proyecto4.png",
-    img2: "/proyectos/proyecto8Hover.png",
-    link: "/IMB",
+    img2: "/proyectos/proyecto4Hover.png",
+    link: "/TNyPlatex",
   },
   {
     id: 5,
     title: "Honda",
     category: "Editorial",
     img1: "/proyectos/proyecto5.png",
-    img2: "/proyectos/proyecto10Hover.png",
-    link: "/Honda",
+    img2: "/proyectos/proyecto5Hover.png",
   },
   {
     id: 6,
-    title: "IMB Platex",
+    title: "DrayTek",
     category: "Digital",
     img1: "/proyectos/proyecto6.png",
-    img2: "/proyectos/proyecto10Hover.png",
-    link: "/TNyPlatex",
+    img2: "/proyectos/proyecto6Hover.png",
+    link: "/DrayTek",
   },
   {
     id: 7,
-    title: "Ministerio de Obras Públicas",
-    category: "Editorial",
-    img1: "/proyectos/proyecto7.png",
-    img2: "/proyectos/proyecto1Hover.png",
-    link: "/MinisterioDeObrasPublicas",
-  },
-  {
-    id: 8,
-    title: "Municipalidad de San Martín",
-    category: "Editorial",
-    img1: "/proyectos/proyecto8.png",
-    img2: "/proyectos/proyecto5Hover.png",
-    link: "/SanMartín",
-  },
-  {
-    id: 9,
-    title: "Municipalidad de San Martín 1",
+    title: "San Martín",
     category: "Institucionales",
-    img1: "/proyectos/proyecto9.png",
-    img2: "/proyectos/proyecto8Hover.png",
+    img1: "/proyectos/proyecto7.png",
+    img2: "/proyectos/proyecto7Hover.png",
     link: "/SanMartín1",
   },
   {
+    id: 8,
+    title: "PSA",
+    category: "Institucionales",
+    img1: "/proyectos/proyecto8.png",
+    img2: "/proyectos/proyecto8Hover.png",
+    link: "/PSA",
+  },
+  {
+    id: 9,
+    title: "Gramon",
+    category: "Editorial",
+    img1: "/proyectos/proyecto9.png",
+    img2: "/proyectos/proyecto9Hover.png",
+    link: "/Gramon",
+  },
+  {
     id: 10,
-    title: "Tyme",
-    category: "Digital",
+    title: "Honda",
+    category: "Editorial",
     img1: "/proyectos/proyecyo10.png",
     img2: "/proyectos/proyecto10Hover.png",
-    link: "/Tyme",
+    link: "/Honda",
   },
   {
     id: 11,
     title: "IMB Platex",
     category: "Digital",
     img1: "/proyectos/proyecto11.png",
-    img2: "/proyectos/proyecto11.png",
-    link: "/TNyPlatex",
+    img2: "/proyectos/proyecto11Hover.png",
   },
   {
     id: 12,
-    title: "Ministerio de Obras Públicas",
+    title: "8M",
     category: "Editorial",
     img1: "/proyectos/proyecto12.png",
-    img2: "/proyectos/proyecto12.png",
-    link: "/MinisterioDeObrasPublicas",
+    img2: "/proyectos/proyecto12Hover.png",
+    link: "/SanMartín",
   },
   {
     id: 13,
-    title: "Municipalidad de San Martín",
-    category: "Editorial",
+    title: "Tyme",
+    category: "Digital",
     img1: "/proyectos/proyecto13.png",
-    img2: "/proyectos/proyecto13.png",
-    link: "/SanMartin",
+    img2: "/proyectos/proyecto13Hover.png",
+    link: "/Tyme",
   },
   {
     id: 14,
-    title: "Municipalidad de San Martín 1",
+    title: "Honda1",
     category: "Institucionales",
     img1: "/proyectos/proyecto14.png",
-    img2: "/proyectos/proyecto14.png",
-    link: "/SanMartin1",
+    img2: "/proyectos/proyecto14Hover.png",
+    link: "/Honda1",
   },
   {
     id: 15,
-    title: "Tyme",
-    category: "Digital",
+    title: "PSA",
+    category: "Editorial",
     img1: "/proyectos/proyecto15.png",
-    img2: "/proyectos/proyecto15.png",
-    link: "/Tyme",
+    img2: "/proyectos/proyecto15Hover.png",
+    link: "/psa",
   },
 ];
 
@@ -180,7 +177,7 @@ export default function Proyectos() {
   return (
     <>
       <NavBar1 />
-      <Box m={"auto"} mt={4} width={"80%"} p={4}>
+      <Box m={"auto"} mt={5} width={"80%"} p={4}>
         <Box
           sx={{ width: "40%", m: "auto" }}
           display="flex"
@@ -189,17 +186,23 @@ export default function Proyectos() {
           {["Digital", "Editorial", "Institucionales"].map((category) => (
             <Button
               key={category}
-              sx={{ width: "33.3%" }}
+              sx={{
+                width: "33.3%",
+                
+              }}
               onClick={() => handleCategoryClick(category)}
               isActive={activeCategory === category}
             >
               <Typography
                 sx={{
                   fontFamily: "acumin-pro",
-                  fontSize: "20px",
+                  fontSize: "18px",
                   lineHeight: "40px",
                   fontWeight: activeCategory === category ? "bold" : "normal",
                   color: "#2F5183",
+                  "&:hover": {
+                    fontWeight: "bold",
+                  },
                 }}
               >
                 {category}
@@ -208,7 +211,7 @@ export default function Proyectos() {
           ))}
         </Box>
 
-        <Box mt={4} display="flex" flexWrap="wrap" justifyContent="center">
+        <Box mt={2} display="flex" flexWrap="wrap" justifyContent="center">
           {projectsData.map((project) => (
             <Link to={project.link} key={project.id}>
               <ProjectCard

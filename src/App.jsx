@@ -15,6 +15,8 @@ import SanMartin1 from "./components/projectos/SanMartin1";
 import Tyme from "./components/projectos/Tyme";
 import Home from "./components/Home";
 import './i18nextConfig'
+import Gamon from "./components/projectos/Gramon";
+import Gramon from "./components/projectos/Gramon";
 
 const App = () => {
   return (
@@ -35,6 +37,7 @@ const App = () => {
           <Route path="/SanMartín" element={<SanMartin/>} />
           <Route path="/SanMartín1" element={<SanMartin1/>} />
           <Route path="/Tyme" element={<Tyme/>} />
+          <Route path="/Gramon" element={<Gramon/>} />
         </Routes>
       </BrowserRouter>
     </div>
