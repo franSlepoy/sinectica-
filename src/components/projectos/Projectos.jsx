@@ -2,6 +2,7 @@ import { Box, Typography, styled } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar1 from "../NavBar/NavBar1";
+import NavBar from "../NavBar/NavBar";
 
 // Estilos para las imágenes de los proyectos
 const ProjectCard = styled(Box)`
@@ -68,7 +69,7 @@ const projectsData = [
     category: "Editorial",
     img1: "/proyectos/proyecto3.png",
     img2: "/proyectos/proyecto3Hover.png",
-    link: "/DrayTek",
+    link: "/MinisterioDeObrasPublicas",
   },
   {
     id: 4,
@@ -111,8 +112,8 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "Gramon",
-    category: "Editorial",
+    title: "Institucionales",
+    category: "",
     img1: "/proyectos/proyecto9.png",
     img2: "/proyectos/proyecto9Hover.png",
     link: "/Gramon",
@@ -120,10 +121,10 @@ const projectsData = [
   {
     id: 10,
     title: "Honda",
-    category: "Editorial",
+    category: "Institucionales",
     img1: "/proyectos/proyecyo10.png",
     img2: "/proyectos/proyecto10Hover.png",
-    link: "/Honda",
+    link: "/Honda1",
   },
   {
     id: 11,
@@ -150,11 +151,11 @@ const projectsData = [
   },
   {
     id: 14,
-    title: "Honda1",
-    category: "Institucionales",
+    title: "HondaSinergia",
+    category: "Editorial",
     img1: "/proyectos/proyecto14.png",
     img2: "/proyectos/proyecto14Hover.png",
-    link: "/Honda1",
+    link: "/Honda",
   },
   {
     id: 15,
@@ -176,7 +177,7 @@ export default function Proyectos() {
 
   return (
     <>
-      <NavBar1 />
+      <NavBar />
       <Box m={"auto"} mt={5} width={"80%"} p={4}>
         <Box
           sx={{ width: "40%", m: "auto" }}

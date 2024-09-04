@@ -33,7 +33,7 @@ const floatAnimation1 = `
 `;
 const FloatingImage1 = styled("img")`
   ${floatAnimation1}
-  
+
   animation: floatAnimation 8s ease-in-out infinite;
 `;
 
@@ -105,14 +105,13 @@ const DrayTek = () => {
 
   return (
     <>
-    
       <Hidden lgDown>
-        <NavBar1/>
+        <NavBar />
         <Box>
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"696px"}
+            height={"782px"}
             src="drayTek/drayTek.png"
             alt="drayTek"
           />
@@ -133,7 +132,6 @@ const DrayTek = () => {
           <FloatingImage1 src="/drayTek/drayTek16.png" alt="drayTek" />
         </Box>
 
-
         <Box
           position={"absolute"}
           top={"350px"}
@@ -143,56 +141,63 @@ const DrayTek = () => {
         </Box>
 
         <Box
-          pt={5}
-          mt={-1}
           sx={{
-            backgroundColor: "#ED1C24",
-            display: "flex",
-            width: "100%",
-            height: "102px",
-            justifyContent: "space-around",
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
           }}
         >
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "white",
+                ml: 2,
+                mt: 2,
               }}
             >
-              {t("clienteProyectos")}  : <strong> Draytek</strong>
-            </Typography>
-          </Box>
-          <Box width={"220px"}>
-            <Typography
-              sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#FFFFFF",
-              }}
-            >
-            {t("proyecto")}: <strong>Página web</strong>
+              {t("clienteProyectos")}: <strong>Draytek</strong>
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
               }}
             >
-            {t("fecha")}: <strong>2024</strong>
+              {t("proyecto")}: <strong>Página web</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2024</strong>
             </Typography>
           </Box>
         </Box>
+
+      
         <Box height={"720px"}>
           <Box mt={4} textAlign={"center"}>
             <img
@@ -233,7 +238,11 @@ const DrayTek = () => {
 
         <Box>
           <Box position={"absolute"} mt={25} zIndex={10}>
-            <img width={"830px"} src="/drayTek/drayTek9.png" alt="compuradora" />
+            <img
+              width={"830px"}
+              src="/drayTek/drayTek9.png"
+              alt="compuradora"
+            />
           </Box>
           <Box
             position={"absolute"}
@@ -242,7 +251,11 @@ const DrayTek = () => {
             top={"1500px"}
             sx={{ left: "63%", transform: "translateX(-50%)" }}
           >
-            <img width={"823px"} src="/drayTek/drayTek8.png" alt="pagina detalle de producto" />
+            <img
+              width={"823px"}
+              src="/drayTek/drayTek8.png"
+              alt="pagina detalle de producto"
+            />
           </Box>
         </Box>
         <Box ml={22}>
@@ -270,16 +283,36 @@ const DrayTek = () => {
             />
           </Box>
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"3200px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
+        <Box
+          position={"absolute"}
+          zIndex={100}
+          top={"3200px"}
+          sx={{ left: "10%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage1 src="drayTek/drayTek12.png" alt="12" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2800px"}  sx={{ left: "10%", transform: "translateX(-50%)" }}>
+        <Box
+          position={"absolute"}
+          zIndex={100}
+          top={"2800px"}
+          sx={{ left: "10%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="drayTek/drayTek13.png" alt="13" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2700px"}  sx={{ left: "60%", transform: "translateX(-50%)" }}>
+        <Box
+          position={"absolute"}
+          zIndex={100}
+          top={"2700px"}
+          sx={{ left: "60%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage1 src="drayTek/drayTek14.png" alt="14" />
         </Box>
-        <Box position={"absolute"} zIndex={100} top={"2900px"}  sx={{ left: "90%", transform: "translateX(-50%)" }}>
+        <Box
+          position={"absolute"}
+          zIndex={100}
+          top={"2900px"}
+          sx={{ left: "90%", transform: "translateX(-50%)" }}
+        >
           <FloatingImage src="drayTek/drayTek15.png" alt="15" />
         </Box>
       </Hidden>

@@ -72,8 +72,8 @@ const Tn = () => {
         <Box mt={0}>
           <img
             style={{ backgroundColor: "#062257", objectFit: "cover" }}
-            width={"100%"}
-            height={"1882px"}
+           
+            height={"1692px"}
             src="/tn/tn3.png"
             alt=""
           />

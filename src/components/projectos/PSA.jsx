@@ -158,9 +158,7 @@ const PSA = () => {
 
   return (
     <>
-  
       <Hidden only={"lg"}>
-     
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -192,7 +190,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-               {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
+              {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -207,7 +205,7 @@ const PSA = () => {
                 ml: -5,
               }}
             >
-             {t("proyecto")}: <strong>Programa de comunicación </strong>
+              {t("proyecto")}: <strong>Programa de comunicación </strong>
             </Typography>
           </Box>
           <Box>
@@ -220,7 +218,7 @@ const PSA = () => {
                 color: "#FFFFFF",
               }}
             >
-               {t("fecha")}: <strong>2010 - 2020</strong>
+              {t("fecha")}: <strong>2010 - 2020</strong>
             </Typography>
           </Box>
         </Box>
@@ -523,8 +521,8 @@ const PSA = () => {
           sx={{ left: "32%", transform: "translateX(-50%)" }}
         >
           <img
-          width={"568px"}
-          height={"384px"}
+            width={"568px"}
+            height={"384px"}
             style={{ objectFit: "cover" }}
             src="psa/psa38.png"
             alt="computadora"
@@ -649,11 +647,11 @@ const PSA = () => {
         </Box>
       </Hidden>
       <Hidden only={"xl"}>
+        <NavBar />
         <Box>
-        <NavBar1/>
           <img
             style={{ objectFit: "cover" }}
-            height={"696px"}
+            height={"782px"}
             width={"100%"}
             src="psa/psa.png"
             alt="portada de PSA"
@@ -661,50 +659,55 @@ const PSA = () => {
         </Box>
 
         <Box
-          pt={5}
-          mt={-1}
           sx={{
-            backgroundColor: "#2F5183",
-            display: "flex",
-            width: "100%",
-            height: "102px",
-            justifyContent: "space-around",
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
           }}
         >
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "white",
+                ml: 2,
+                mt: 2,
               }}
             >
-               {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
-            </Typography>
-          </Box>
-          <Box width={"400px"}>
-            <Typography
-              sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#FFFFFF",
-              }}
-            >
-               {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+              {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
               }}
             >
               {t("fecha")}: <strong>2010 - 2020</strong>
@@ -712,7 +715,7 @@ const PSA = () => {
           </Box>
         </Box>
 
-        <Box>
+        <Box mt={"-4px"}>
           <img
             style={{ objectFit: "cover" }}
             height={"856px"}
@@ -824,7 +827,7 @@ const PSA = () => {
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "3984px",
+                top: "3972px",
                 width: "50%",
                 /*   left: '75%',
           transform: 'translateX(-50%)', */
@@ -842,7 +845,7 @@ const PSA = () => {
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "3984px",
+                top: "3972px",
                 opacity: showSecondImage ? 1 : 0,
                 width: "50%",
               }}

@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
@@ -57,6 +59,7 @@ const AnimatedImage = styled("img")`
 `;
 
 const honda1 = () => {
+  const { t, i18n } = useTranslation();
   const [showAdditionalImages, setShowAdditionalImages] = useState(false);
   const [showFinalImages, setShowFinalImages] = useState(true);
 
@@ -69,10 +72,11 @@ const honda1 = () => {
 
   return (
     <>
+    <NavBar/>
       <Box>
         <img
           style={{ objectFit: "cover" }}
-          height={"696px"}
+          height={"782px"}
           width={"100%"}
           src="/honda1/honda1-1.png"
           alt="taller de Honda"
@@ -80,57 +84,64 @@ const honda1 = () => {
       </Box>
 
       <Box
-        id="seccionDestino"
-        pt={5}
-        mt={-1}
-        sx={{
-          backgroundColor: "#E11F27",
-          display: "flex",
-          width: "100%",
-          height: "102px",
-          justifyContent: "space-around",
-        }}
-      >
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Cliente: <strong>Honda Argentina</strong>
-          </Typography>
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
+           
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2017 - 2020</strong>
+            </Typography>
+          </Box>
         </Box>
-        <Box width={"420px"}>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Proyecto: <strong>Programa de comunicación interna</strong>
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
-              fontSize: "18px",
-              lineHeight: "21.78px",
-              color: "#FFFFFF",
-            }}
-          >
-            Año: <strong>2017 - 2020</strong>
-          </Typography>
-        </Box>
-      </Box>
+
+     
       <Box width={"100%"} bgcolor={"white"}>
         <Box width="80%" m={"auto"}>
           {" "}
@@ -148,7 +159,7 @@ const honda1 = () => {
         }}
       >
         <img
-          width={"828px"}
+          width={"858px"}
           style={{ objectFit: "cover" }}
           src="/honda1/honda1-3.png"
           alt=""
@@ -184,8 +195,7 @@ const honda1 = () => {
       </Box>
 
       <Box
-        onMouseEnter={() => setShowAdditionalImages(true)}
-        onMouseLeave={() => setShowAdditionalImages(false)}
+       
         position={"absolute"}
         top={"2980px"} // Ajusta la posición según sea necesario
         left={"76%"} // Ajusta la posición según sea necesario
@@ -194,7 +204,7 @@ const honda1 = () => {
         <img src="/honda1/honda1-10.png" alt="honda" />
       </Box>
 
-      {showAdditionalImages && (
+  
         <>
           <Box position={"absolute"} top={"3000px"} left={"6%"}>
             <img width={"80%"} src="/honda1/honda1-11.png" alt="honda" />

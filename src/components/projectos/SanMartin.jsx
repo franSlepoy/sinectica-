@@ -30,14 +30,14 @@ const SanMartin = () => {
     [{ src: "sanMartin/sanMartin7.png" }, { src: "sanMartin/sanMartin8.png" }],
     [
       { src: "sanMartin/sanMartin11.png" },
-      { src: "sanMartin/sanMartin12.png" },
+      { src: "sanMartin/SanMartin12.png" },
     ],
   ];
   const imageSets1 = [
     [{ src: "sanMartin/sanMartin9.png" }, { src: "sanMartin/sanMartin10.png" }],
     [
       { src: "sanMartin/sanMartin13.png" },
-      { src: "sanMartin/sanMartin14.png" },
+      { src: "sanMartin/sanmMartin14.png" },
     ],
   ];
   useEffect(() => {
@@ -70,12 +70,12 @@ const SanMartin = () => {
 
   return (
     <>
-      <Hidden >
-        <NavBar1/>
+      <Hidden>
+        <NavBar />
         <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"696px"}
+            height={"782px"}
             width={"100%"}
             src="sanMartin/sanMartin.png"
             alt="portada de San Martín"
@@ -83,50 +83,56 @@ const SanMartin = () => {
         </Box>
 
         <Box
-          pt={5}
-          mt={-1}
           sx={{
-            backgroundColor: "#D5CAA4",
-            display: "flex",
-            width: "100%",
-            height: "102px",
-            justifyContent: "space-around",
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
           }}
         >
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "white",
+                ml: 2,
+                mt: 2,
               }}
             >
-               {t("clienteProyectos")}: <strong>Municipalidad de San Martín</strong>
-            </Typography>
-          </Box>
-          <Box width={"550px"}>
-            <Typography
-              sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "black",
-              }}
-            >
-             {t("proyecto")}: <strong>Libro #JuntasLibresIguales</strong>
+              {t("clienteProyectos")}:{" "}
+              <strong>Municipalidad de San Martín</strong>
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Libro #JuntasLibresIguales</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
               }}
             >
               {t("fecha")}: <strong>2022</strong>
@@ -134,7 +140,9 @@ const SanMartin = () => {
           </Box>
         </Box>
 
-        <Box>
+    
+
+        <Box mt={"-4px"}>
           <img
             style={{ objectFit: "cover" }}
             height={"856px"}

@@ -1,201 +1,42 @@
-import { Box, Typography, styled } from "@mui/material";
-const floatAnimation = `
-  @keyframes floatAnimation {
-    0% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-5px) rotate(0.5deg); }
-    50% { transform: translateY(0) rotate(-0.5deg); }
-    75% { transform: translateY(5px) rotate(0.25deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-  }
-`;
-
-const FloatingImage = styled("img")`
-  ${floatAnimation}
-  animation: floatAnimation 4s ease-in-out infinite;
-  object-fit: cover;
-  `;
-
-const floatAnimation1 = `
-  @keyframes floatAnimation {
-    0% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-3px) rotate(0.6deg); }
-    35% { transform: translateY(-6px) rotate(0.8deg); }
-    50% { transform: translateY(0) rotate(-0.4deg); }
-    60% { transform: translateY(1) rotate(-0.10deg); }
-    75% { transform: translateY(3px) rotate(0.27deg); }
-    100% { transform: translateY(0) rotate(0deg); }
-  }
-`;
-const FloatingImage1 = styled("img")`
-  ${floatAnimation1}
-
-  animation: floatAnimation 8s ease-in-out infinite;
-  object-fit: cover;
-  `;
+import { useEffect, useState } from "react";
+import { Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false); // Estado para controlar la visibilidad del menú
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsSticky(scrollTop > 800); // Cambia a true cuando el scroll es mayor a 800px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible); // Cambia la visibilidad del menú al hacer clic en el logo
+  };
+
   return (
     <>
-     
-     <Box position={"absolute"} top={30}  width={"100%"} height={"60px"}  m={"auto"}>
-      <img width={"100%"}  src="/navBar/navBar.png"/> 
-     
-  {/*     
-     <Box
-          bgcolor={"transparent"}
-          width={"80%"} m={"auto"}
-          height={"100px"}
-          display={"flex"}
-           mt={"2%"}
-          
-        >
-          <FloatingImage width={"100px"} src="/home/home36.png" alt="drayTek" />
-          <FloatingImage1
-            width={"50px"} height={"55px"}
-            src="/home/home38.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home39.png" alt="drayTek" />
-          <FloatingImage1
-            width={"80px"}height={"80px"}
-            src="/home/home40.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-            width={"40px"}height={"60px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home36.png" alt="drayTek" />
-          <FloatingImage1
-          width={"50px"} height={"55px"}
-        
-            src="/home/home38.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home39.png" alt="drayTek" />
-          <FloatingImage1
-            width={"120px"}
-            src="/home/home40.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-            width={"10px"}height={"10px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-          width={"50px"} height={"55px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-          width={"50px"} height={"55px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-          width={"100px"} height={"65px"}
-            src="/home/home37.png"
-            alt="drayTek"
-          />
-        </Box> */}
-        
-
-        <Box
-          bgcolor={"transparent"}
-          display={"flex"}
-          position={"absolute"}
-          sx={{ top: "5%", left: "2%" }}
-          width={"80%"} m={"auto"}
-          height={"70px"}
-        >
-          <FloatingImage1 width={"90px"} src="/home/home38.png" alt="drayTek" />
-          <FloatingImage
-            width={"55px"}
-            src="/home/fondos-38.png"
-            alt="drayTek"
-          />
-          <FloatingImage1
-            width={"100px"}
-            src="/home/home40.png"
-            alt="drayTek"
-          />
-          <FloatingImage
-            width={"100px"}
-            src="/home/fondos-39.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"50px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-            width={"10px"}
-            src="/home/fondos-36.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home40.png" alt="drayTek" />
-          <FloatingImage1 width={"79px"} src="/home/home42.png" alt="drayTek" />
-          <FloatingImage width={"100px"} src="/home/home39.png" alt="drayTek" />
-          <FloatingImage1
-            width={"800px"}
-            src="/home/home40.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home36.png" alt="drayTek" />
-          <FloatingImage1
-            width={"100px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"100px"} src="/home/home41.png" alt="drayTek" />
-          <FloatingImage1
-            width={"100px"}
-            src="/home/home42.png"
-            alt="drayTek"
-          />
-          <FloatingImage1 width={"90px"} src="/home/home38.png" alt="drayTek" />
-          <FloatingImage width={"55px"} src="/home/home39.png" alt="drayTek" />
-          <FloatingImage1
-            width={"100px"}
-            src="/home/home40.png"
-            alt="drayTek"
-          />
-          <FloatingImage
-            width={"100px"}
-            src="/home/fondos-43.png"
-            alt="drayTek"
-          />
-          <FloatingImage width={"55px"} src="/home/home39.png" alt="drayTek" />
-          <FloatingImage1
-            width={"100px"}
-            src="/home/fondos-40.png"
-            alt="drayTek"
-          />
-          <FloatingImage
-            width={"100px"}
-            src="/home/fondos-41.png"
-            alt="drayTek"
-          />
-
-          <FloatingImage1
-            width={"100px"}
-            src="/home/fondos-36.png"
-            alt="drayTek"
-          />
-          <FloatingImage
-            width={"100px"}
-            src="/home/fondos-37.png"
-            alt="drayTek"
-          />
-        </Box> 
+      {/* Barra de navegación superior */}
+      <Box
+        position={"absolute"}
+        top={30}
+        width={"100%"}
+        height={"60px"}
+        m={"auto"}
+      >
         <Box
           position={"absolute"}
           top={"-5px"}
-          left={"37%"}
+          left={"41%"}
           width={"20%"}
           m={"auto"}
           display={"flex"}
@@ -203,33 +44,31 @@ const NavBar = () => {
         >
           <Box>
             <Typography
+              component={Link} to={"/contacto"}
               sx={{
+                textDecoration: "none",
                 fontFamily: "acumin-pro",
-                fontSize: "45px",
+                fontSize: "18px",
+                height: "30px",
+                fontWeight: "normal",
                 color: "white",
               }}
             >
               Somos
             </Typography>
           </Box>
-          <Box>
-            <Typography
-              sx={{
-                ml: 4,
-                fontFamily: "acumin-pro",
-                fontSize: "45px",
-                color: "white",
-              }}
-            >
-              S
-            </Typography>
+          <Box component={Link} to={"/"}>
+            <img src="/navBar/sNav.png" />
           </Box>
           <Box>
             <Typography
+              component={Link} to={"/proyectos"}
               sx={{
-                ml: 4,
+                textDecoration: "none",
                 fontFamily: "acumin-pro",
-                fontSize: "45px",
+                fontSize: "18px",
+                height: "30px",
+                fontWeight: "normal",
                 color: "white",
               }}
             >
@@ -237,8 +76,59 @@ const NavBar = () => {
             </Typography>
           </Box>
         </Box>
+      </Box>
 
-        <Box />
+      {/* Menú de contacto y logo */}
+      <Box
+        position={"fixed"}
+        top={40} // Posición fija desde el top de la ventana
+        right={"5%"} // Ajusta según sea necesario
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"end"}
+        zIndex={100}
+        style={{
+          opacity: isSticky ? 1 : 0, // Oculta el elemento si no es sticky
+        }}
+      >
+        <Box onClick={toggleMenu} style={{ cursor: "pointer" }}>
+          <img src="/navBar/logo.png" alt="logo" />
+        </Box>
+
+        {/* Enlaces de Hacemos y Contacto, visibles solo si menuVisible es true */}
+        {menuVisible && (
+          <Box>
+            <Typography
+              component={Link} to={"/proyectos"}
+              sx={{
+                display: "block",
+                textDecoration: "none",
+                fontFamily: "acumin-pro",
+                fontSize: "16px",
+                height: "20px",
+                fontWeight: "100",
+                color: "white",
+                mt: 1,
+              }}
+            >
+              Hacemos
+            </Typography>
+            <Typography
+              component={Link} to={"/contacto"}
+              sx={{
+                textDecoration: "none",
+                fontFamily: "acumin-pro",
+                fontSize: "16px",
+                height: "20px",
+                fontWeight: 100,
+                color: "white",
+                mt: 1,
+              }}
+            >
+              Contacto
+            </Typography>
+          </Box>
+        )}
       </Box>
     </>
   );

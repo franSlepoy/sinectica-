@@ -1,51 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
-
-
-
- 
-
-
-
-const AdditionalImagesContainer = styled(Box)`
-  display: flex;
-  justify-content: space-around;
-  background-image: url("/obrasPublicas/obras2.png");
-  background-size: cover;
-  background-position: center;
-
-  padding: 20px;
-`;
-const AdditionalImagesContainer1 = styled(Box)`
-  display: flex;
-  justify-content: space-around;
-  background-image: url("/obrasPublicas/obras9.png");
-  background-size: cover;
-  background-position: center;
-
-  padding: 20px;
-`;
-
-const AnimatedImage = styled("img")`
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-
-  &.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  &.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-`;
+import { useTranslation } from "react-i18next";
+import NavBar from "../NavBar/NavBar";
 
 const ObrasPublicas = () => {
-  const [showAdditionalImages, setShowAdditionalImages] = useState(false);
-  const [showFinalImages, setShowFinalImages] = useState(true);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,9 +16,11 @@ const ObrasPublicas = () => {
 
   return (
     <>
+      <NavBar />
       <Box>
         <img
-           height={"696px"}
+          style={{ objectFit: "cover" }}
+          height={"782px"}
           width={"100%"}
           src="/obrasPublicas/obras1.png"
           alt="imágen autopistas"
@@ -69,48 +31,48 @@ const ObrasPublicas = () => {
         position={"absolute"}
         top={"280px"}
         left={"35%"}
-      >
-      
-      </Box>
+      ></Box>
 
       <Box
-        id="seccionDestino"
-        pt={5}
-        mt={-1}
         sx={{
-          backgroundColor: "#03C3FF",
-          display: "flex",
-          width: "100%",
-          height: "102px",
-          justifyContent: "space-evenly",
+          backgroundColor: "rgba(255, 255, 255, 0.16)",
+          position: "absolute",
+          top: "640px",
+          width: "90%",
+          left: "5%",
+          height: "118px",
         }}
       >
         <Box>
           <Typography
             sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
+              fontFamily: "acumin-pro",
+              fontWeight: "100",
               fontSize: "18px",
               lineHeight: "21.78px",
-              color: "#FFFFFF",
+              color: "white",
+              ml: 2,
+              mt: 2,
             }}
           >
-            Cliente: <strong> Ministerio de Obras Públicas</strong>
+            {t("clienteProyectos")}:{" "}
+            <strong>Ministerio de Obras Públicas</strong>
           </Typography>
         </Box>
-        <Box width={"720px"}>
+        <Box>
           <Typography
             sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
+              fontFamily: "acumin-pro",
+              fontWeight: "bold",
               fontSize: "18px",
               lineHeight: "21.78px",
-              color: "#FFFFFF",
+              color: "#52BAFF",
+              ml: 2,
+              mt: 1,
             }}
           >
-            Proyecto:{" "}
+            {t("proyecto")}:{" "}
             <strong>
-              {" "}
               Plan de Obras públicas para el Desarrollo de la Nación
             </strong>
           </Typography>
@@ -118,93 +80,112 @@ const ObrasPublicas = () => {
         <Box>
           <Typography
             sx={{
-              fontFamily: "Inter",
-              fontWeight: "400",
+              fontFamily: "acumin-pro",
+              fontWeight: "",
               fontSize: "18px",
               lineHeight: "21.78px",
-              color: "#FFFFFF",
+              color: "#61FB65",
+              ml: 2,
+              mt: 1,
             }}
           >
-            Año: <strong>2023</strong>
+            {t("fecha")}: <strong>2010 - 2020</strong>
           </Typography>
         </Box>
       </Box>
-
-      <AdditionalImagesContainer height={"720px"}>
-        <Box mt={15}>
-          <AnimatedImage
-            width={"90%"}
-            src="/obrasPublicas/obras3.png"
-            alt="libro"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
-
-        <Box mt={15}>
-          <AnimatedImage
-            width={"90%"}
-            src="/obrasPublicas/obras4.png"
-            alt="libro"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
-        <Box mt={15}>
-          <AnimatedImage
-            width={"90%"}
-            src="/obrasPublicas/obras5.png"
-            alt="libro"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
-      </AdditionalImagesContainer>
-
-      <Box display={"flex"} justifyContent={"space-evenly"} bgcolor={"white"}>
-        <Box mt={5}>
-          <img
-            src="/obrasPublicas/obras6.png"
-            alt="imagen de bras públicas"
-          />
-        </Box>
-        <Box mt={7}>
-          <img
-            width={"96%"}
-            src="/obrasPublicas/obras7.png"
-            alt="imagen de bras públicas"
-          />
-        </Box>
+      <Box mt={"-4px"}>
+        <img
+          width={"100%"}
+          style={{ objectFit: "cover" }}
+          height={"782px"}
+          src="/obrasPublicas/obras2.png"
+          alt=""
+        />
       </Box>
-      <Box display={"flex"} justifyContent={"center"} bgcolor={"white"}>
-        <Box mt={2} pb={4}>
-          <img
-            src="/obrasPublicas/obras8.png"
-            alt="imagen de bras públicas"
-          />
-        </Box>
-      </Box>
-      <AdditionalImagesContainer1 height={"720px"}>
-        <Box mt={15}>
-          <AnimatedImage
-            width={"90%"}
-            src="/obrasPublicas/obras10.png"
-            alt="libro"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
 
-        <Box mt={15}>
-          <AnimatedImage
-            width={"90%"}
-            src="/obrasPublicas/obras11.png"
-            alt="libro"
-            className={showFinalImages ? "visible" : "hidden"}
-          />
-        </Box>
-      </AdditionalImagesContainer1>
+      <Box mt={"-4px"}>
+        <img
+          width={"100%"}
+          style={{ objectFit: "cover" }}
+          height={"1390px"}
+          src="/obrasPublicas/obras14.png"
+          alt=""
+        />
+      </Box>
+
       <Box>
-      <img width={"100%"} height={"932px"} src="/obrasPublicas/obras12.png" alt="" />
+        <Box
+          position={"absolute"}
+          sx={{ top: "1600px", left: "26.5%", transform: "translateX(-29%)" }}
+        >
+          <img height={"632px"} src="/obrasPublicas/obras7.png" alt="libro" />
+        </Box>
+        <Box
+          position={"absolute"}
+          sx={{ top: "1600px", left: "64%", transform: "translateX(-29%)" }}
+        >
+          <img height={"282px"} src="/obrasPublicas/obras10.png" alt="libro" />
+        </Box>
+        <Box
+          position={"absolute"}
+          sx={{ top: "1900px", left: "64%", transform: "translateX(-29%)" }}
+        >
+          <img height={"282px"} src="/obrasPublicas/obras11.png" alt="libro" />
+        </Box>
+        <Box
+          position={"absolute"}
+          sx={{ top: "2250px", left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img width={"1000px"} src="/obrasPublicas/obras8.png" alt="libro" />
+        </Box>
       </Box>
-      <Box mt={-1}>
-      <img width={"100%"} height={"932px"} src="/obrasPublicas/obras13.png" alt="" />
+
+      <Box mt={"-4px"} width={"100%"} display={"flex"}>
+        <Box width={"30%"}>
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"369px"}
+            src="/obrasPublicas/obras3.png"
+            alt=""
+          />
+        </Box>
+        <Box width={"40%"}>
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"369px"}
+            src="/obrasPublicas/obras4.png"
+            alt=""
+          />
+        </Box>
+
+        <Box width={"30%"}>
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"369px"}
+            src="/obrasPublicas/obras5.png"
+            alt=""
+          />
+        </Box>
+      </Box>
+
+      <Box mt={"-4px"}>
+        <img
+          style={{ objectFit: "cover" }}
+          width={"100%"}
+          src="/obrasPublicas/obras12.png"
+          alt=""
+        />
+      </Box>
+      <Box mt={"-4px"}>
+        <img
+          style={{ objectFit: "cover", height:"800px" }}
+          width={"100%"}
+          src="/obrasPublicas/obras13.png"
+          alt=""
+        />
       </Box>
     </>
   );
