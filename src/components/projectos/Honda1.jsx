@@ -33,46 +33,12 @@ const ScrollableImageContainer = styled(Box)`
   }
 `;
 
-const AdditionalImagesContainer = styled(Box)`
-  display: flex;
-  justify-content: space-around;
-  background-image: url("/honda1/honda1-19.png");
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-`;
-
-const AnimatedImage = styled("img")`
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-
-  &.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  &.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-`;
-
 const honda1 = () => {
   const { t, i18n } = useTranslation();
-  const [showAdditionalImages, setShowAdditionalImages] = useState(false);
-  const [showFinalImages, setShowFinalImages] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowFinalImages((prev) => !prev);
-    }, 3000); // Cambia cada 3 segundos
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <Box>
         <img
           style={{ objectFit: "cover" }}
@@ -82,66 +48,62 @@ const honda1 = () => {
           alt="taller de Honda"
         />
       </Box>
-
       <Box
-          sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.16)",
-            position: "absolute",
-            top: "640px",
-            width: "90%",
-            left: "5%",
-            height: "118px",
-           
-          }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "100",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "white",
-                ml: 2,
-                mt: 2,
-              }}
-            >
-              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "bold",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#52BAFF",
-                ml: 2,
-                mt: 1,
-              }}
-            >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#61FB65",
-                ml: 2,
-                mt: 1,
-              }}
-            >
-              {t("fecha")}: <strong>2017 - 2020</strong>
-            </Typography>
-          </Box>
+        sx={{
+          backgroundColor: "rgba(255, 255, 255, 0.16)",
+          position: "absolute",
+          top: "640px",
+          width: "90%",
+          left: "5%",
+          height: "118px",
+        }}
+      >
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "acumin-pro",
+              fontWeight: "100",
+              fontSize: "18px",
+              lineHeight: "21.78px",
+              color: "white",
+              ml: 2,
+              mt: 2,
+            }}
+          >
+            {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+          </Typography>
         </Box>
-
-     
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "acumin-pro",
+              fontWeight: "bold",
+              fontSize: "18px",
+              lineHeight: "21.78px",
+              color: "#52BAFF",
+              ml: 2,
+              mt: 1,
+            }}
+          >
+            {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+          </Typography>
+        </Box>
+        <Box>
+          <Typography
+            sx={{
+              fontFamily: "acumin-pro",
+              fontWeight: "",
+              fontSize: "18px",
+              lineHeight: "21.78px",
+              color: "#61FB65",
+              ml: 2,
+              mt: 1,
+            }}
+          >
+            {t("fecha")}: <strong>2017 - 2020</strong>
+          </Typography>
+        </Box>
+      </Box>
       <Box width={"100%"} bgcolor={"white"}>
         <Box width="80%" m={"auto"}>
           {" "}
@@ -151,24 +113,24 @@ const honda1 = () => {
       <ScrollableImageContainer
         sx={{
           position: "absolute",
-          left: "50%",
-          top: "890px",
+          left: "49.8%",
+          top: "882px",
           transform: "translateX(-50%)",
-          width: "832px",
-          height: "512px",
+          width: "834px",
+          height: "502px",
         }}
       >
         <img
-          width={"858px"}
+          width={"824px"}
           style={{ objectFit: "cover" }}
           src="/honda1/honda1-3.png"
           alt=""
         />
       </ScrollableImageContainer>
 
-      <Box mt={-1} display={"flex"} bgcolor={"#F0F0F0"}>
-        <Box mt={10} ml={10}>
-          <img src="/honda1/honda1-4.png" alt="honda" />
+      <Box mt={-1} pt={10} display={"flex"} bgcolor={"#F0F0F0"}>
+        <Box mt={20} ml={10}>
+          <img src="/honda1/honda1-4.png" alt="hondaSOy" />
         </Box>
         <Box mt={2} ml={8}>
           <img src="/honda1/honda1-5.png" alt="honda" />
@@ -177,76 +139,83 @@ const honda1 = () => {
           <img src="/honda1/honda1-6.png" alt="honda" />
         </Box>
       </Box>
-      <Box display={"flex"} bgcolor={"#F0F0F0"}>
-        <Box mt={18} ml={20}>
+      <Box display={"flex"} bgcolor={"#F0F0F0"} pb={4}>
+        <Box mt={10} ml={20}>
           <img src="/honda1/honda1-7.png" alt="honda" />
         </Box>
         <Box mt={10} ml={20}>
           <img src="/honda1/honda1-8.png" alt="honda" />
         </Box>
       </Box>
-      <Box mt={-12}>
+      <Box>
         <img
+          style={{ objectFit: "cover" }}
           width={"100%"}
-          height={"936px"}
+          height={"800px"}
           src="/honda1/honda1-9.png"
           alt="taller de honda"
         />
       </Box>
 
+      <Box mt={"-4px"} bgcolor={"#F0F0F0"} height={"700px"}></Box>
+
       <Box
-       
         position={"absolute"}
-        top={"2980px"} // Ajusta la posición según sea necesario
-        left={"76%"} // Ajusta la posición según sea necesario
+        top={"3080px"} // Ajusta la posición según sea necesario
+        left={"70%"} // Ajusta la posición según sea necesario
         sx={{ cursor: "pointer" }}
       >
         <img src="/honda1/honda1-10.png" alt="honda" />
       </Box>
+      <>
+        <Box position={"absolute"} top={"3500px"} left={"20%"}>
+          <img width={"80%"} src="/honda1/honda1-11.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"3550px"} left={"55%"}>
+          <img width={"80%"} src="/honda1/honda1-12.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"4100px"} left={"20%"}>
+          <img src="/honda1/honda1-13.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"4180px"} left={"55%"}>
+          <img width={"80%"} src="/honda1/honda1-14.png" alt="honda" />
+        </Box>
+        <Box position={"absolute"} top={"4180px"} left={"70%"}>
+          <img width={"80%"} src="/honda1/honda1-15.png" alt="honda" />
+        </Box>
+      </>
 
-  
-        <>
-          <Box position={"absolute"} top={"3000px"} left={"6%"}>
-            <img width={"80%"} src="/honda1/honda1-11.png" alt="honda" />
-          </Box>
-          <Box position={"absolute"} top={"3150px"} left={"40%"}>
-            <img width={"80%"} src="/honda1/honda1-12.png" alt="honda" />
-          </Box>
-          <Box position={"absolute"} top={"3200px"} left={"74%"}>
-            <img src="/honda1/honda1-13.png" alt="honda" />
-          </Box>
-          <Box position={"absolute"} top={"3280px"} left={"20%"}>
-            <img width={"80%"} src="/honda1/honda1-14.png" alt="honda" />
-          </Box>
-          <Box position={"absolute"} top={"3000px"} left={"54%"}>
-            <img width={"80%"} src="/honda1/honda1-15.png" alt="honda" />
-          </Box>
-        </>
-      )}
-
-      <AdditionalImagesContainer m={5}>
+      <Box m={5} display={"flex"} justifyContent={"space-evenly"}>
         <Box>
-          <AnimatedImage
+          <img
+            height={"525px"}
             src="/honda1/honda1-16.png"
             alt="propaganda de honda"
-            className={showFinalImages ? "visible" : "hidden"}
           />
         </Box>
         <Box>
-          <AnimatedImage
+          <img
+            height={"525px"}
             src="/honda1/honda1-17.png"
             alt="propaganda de honda"
-            className={showFinalImages ? "visible" : "hidden"}
           />
         </Box>
         <Box>
-          <AnimatedImage
+          <img
+            height={"525px"}
             src="/honda1/honda1-18.png"
             alt="propaganda de honda"
-            className={showFinalImages ? "visible" : "hidden"}
           />
         </Box>
-      </AdditionalImagesContainer>
+      </Box>
+      <Box>
+        <img
+          width={"100%"}
+          height={"800px"}
+          src="/honda1/honda1-19.png"
+          alt=""
+        />
+      </Box>
     </>
   );
 };

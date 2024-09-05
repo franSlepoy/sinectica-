@@ -65,11 +65,11 @@ const FadingImage = styled(Box)`
   position: absolute;
 
   /* left: 47%; */
-  transition: opacity 0.5s ease-in-out;
+ 
 `;
 
 const FadingImage1 = styled(Box)`
-  transition: opacity 0.5s ease-in-out;
+
 `;
 
 const FadingImage2 = styled(Box)`

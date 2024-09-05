@@ -3,7 +3,7 @@ import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
-import NavBar1 from "../NavBar/NavBar1";
+
 
 const FadingImage = styled(Box)`
   position: absolute;

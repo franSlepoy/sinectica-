@@ -209,7 +209,7 @@ const DrayTek = () => {
           </Box>
         </Box>
         <ScrollableImageContainer
-          sx={{ top: "908px", left: "50.2%", transform: "translateX(-50%)" }}
+          sx={{ top: "904px", left: "50.2%", transform: "translateX(-50%)" }}
         >
           <img width={"653px"} src="/drayTek/drayTek4.png" alt="" />
         </ScrollableImageContainer>

@@ -1,16 +1,17 @@
 import { Box, Hidden, Typography } from "@mui/material";
-import NavBar1 from "../NavBar/NavBar1";
+import NavBar from "../NavBar/NavBar";
+import { useTranslation } from "react-i18next";
 
 const Tn = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Hidden lgDown>
-
-        <NavBar1/>
+        <NavBar />
         <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"700px"}
+            height={"782px"}
             width={"100%"}
             src="/tn/tn.png"
             alt=""
@@ -18,53 +19,59 @@ const Tn = () => {
         </Box>
 
         <Box
-          pt={5}
-          mt={-1}
           sx={{
-            backgroundColor: "#062257",
-            display: "flex",
-            width: "100%",
-            height: "102px",
-            justifyContent: "space-around",
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
           }}
         >
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "white",
+                ml: 2,
+                mt: 2,
               }}
             >
-              Cliente: <strong>TN Platex</strong>
+              {t("clienteProyectos")}: <strong>TN Platex</strong>
             </Typography>
           </Box>
-          <Box width={"420px"}>
+
+          <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
               }}
             >
-              Proyecto: <strong>App de gestión documental</strong>
+              {t("proyecto")}: <strong>App de gestión documental</strong>
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#FFFFFF",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
               }}
             >
-              Año: <strong>2023</strong>
+              {t("fecha")}: <strong>2023</strong>
             </Typography>
           </Box>
         </Box>
@@ -72,8 +79,8 @@ const Tn = () => {
         <Box mt={0}>
           <img
             style={{ backgroundColor: "#062257", objectFit: "cover" }}
-           
-            height={"1692px"}
+            width={"100%"}
+            height={"1894px"}
             src="/tn/tn3.png"
             alt=""
           />

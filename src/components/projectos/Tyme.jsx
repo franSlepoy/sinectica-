@@ -99,11 +99,11 @@ const Tyme = () => {
   return (
     <>
       <Hidden lgDown>
-        <NavBar1/>
+        <NavBar/>
         <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"696px"}
+            height={"782px"}
             width={"100%"}
             src="tyme/tyme.png"
             alt="Portada de tyme"
@@ -164,65 +164,66 @@ const Tyme = () => {
             </Typography>
           </Box>
         </AnimatedTextContainer>  */}
-         <Box
-          pt={5}
-          mt={-1}
+        <Box
           sx={{
-            backgroundColor: "#1296E9",
-            display: "flex",
-            width: "100%",
-            height: "102px",
-            justifyContent: "space-around",
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "640px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
           }}
         >
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "white",
+                ml: 2,
+                mt: 2,
               }}
             >
-               {t("clienteProyectos")}: <strong>Tyme </strong>
+              {t("clienteProyectos")}:{" "}
+              <strong>Tyme Consulting</strong>
             </Typography>
           </Box>
-          <Box ml={8} width={"300px"}>
+          
+          <Box >
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
               }}
             >
-              <a
-                target="_blank"
-                style={{ color: "black", textDecoration: "none" }}
-                href="https://www.tyme-consulting.com/"
-              >
-                {t("proyecto")}: <strong>Sitio Web</strong>
-              </a>
+              {t("proyecto")}: <strong>Web</strong>
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
-                fontFamily: "Inter",
-                fontWeight: "400",
+                fontFamily: "acumin-pro",
+                fontWeight: "",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
               }}
             >
-            {t("fecha")}: <strong>2024</strong>
+              {t("fecha")}: <strong>2024</strong>
             </Typography>
           </Box>
         </Box>
 
-        <Box>
+        <Box mt={"-4px"}>
           <img
             style={{ objectFit: "cover" }}
             height={"943px"}
