@@ -6,7 +6,6 @@ import Example from "./Example";
 import MouseParticleTrail1 from "./MouseParticleTrail1";
 import MouseParticleTrail2 from "./MouseParticleTrail2";
 
-
 const Home = () => {
   const { t, i18n } = useTranslation();
 
@@ -17,23 +16,34 @@ const Home = () => {
 
   return (
     <>
-      <Box sx={{ position: "absolute",
+      <Box
+        sx={{
+          position: "absolute",
+          bgcolor: "#0068FF",
+          borderRadius: "100%",
+          width: "42px",
+          height: "42px",
           zIndex: 10,
-          top: "90%",
-          left: "90%",
-          transform: "translateX(-50%)",}}>
+          top: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
         <Typography
           onClick={toggleLanguage}
           sx={{
             cursor: "pointer",
             "&:hover": {
-              textDecoration: "underline",
+              textDecoration: "none",
             },
             fontFamily: "acumin-pro",
-            fontSize: "25px",
+            fontSize: "18px",
+            color: "white",
+            textAlign: "center",
+            mt: "5px",
           }}
         >
-          {i18n.language === "en" ? "ESP" : "ENG"}
+          {i18n.language === "en" ? "ES" : "EN"}
         </Typography>
       </Box>
 
@@ -41,40 +51,68 @@ const Home = () => {
         sx={{
           position: "absolute",
           zIndex: 10,
-          top: "20px",
-          left: "10%",
+          top: "100px",
+          left: "50%",
           transform: "translateX(-50%)",
         }}
-      >
-        <Typography sx={{ fontFamily: "acumin-pro", fontSize: "35px" }}>
-         Sinéctica
-        </Typography>
-      </Box>
-      <Box
-        position={"absolute"}
-        sx={{ top: "20px", left: "90%", transform: "translateX(-50%)" }}
       >
         <Typography
-          component={Link}
-          to={"/proyectos"}
-          sx={{ fontFamily: "acumin-pro", fontSize: "35px", color: "black" }}
+          sx={{
+            textAlign: "center",
+            fontFamily: "acumin-pro",
+            fontSize: "28px",
+            fontWeight: "regular",
+            lineHeight: "50px",
+            color: "#0068FF",
+          }}
         >
-         {t("homeProyectos")}
+          {t("homeTitulo1")}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontFamily: "acumin-pro",
+            fontSize: "28px",
+            fontWeight: "regular",
+            lineHeight: "50px",
+            color: "#0068FF",
+          }}
+        >
+          {t("homeTitulo2")}
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontFamily: "acumin-pro",
+            fontSize: "28px",
+            fontWeight: "regular",
+            lineHeight: "50px",
+            color: "#0068FF",
+          }}
+        >
+          {t("homeTitulo3")}
         </Typography>
       </Box>
+
       <Box
+        component={Link}
+        to={"/proyectos"}
         position={"absolute"}
         sx={{
-          top: "90%",
-       
-          left: "13.5%",
+          top: "700px",
+          left: "50%",
           transform: "translateX(-50%)",
+          bgcolor: "#0068FF",
+          width: "42px",
+          height: "42px",
+          borderRadius: "100%",
+          textAlign:"center",
+          pt:1.3
         }}
       >
-        <Typography sx={{ fontFamily: "acumin-pro", fontSize: "25px" }}>
-         sinéctica@gmail.com
-        </Typography>
+        <img width={"20px"} src="/flechaHome.png" alt="flecha" />
       </Box>
+
       <Box
         position={"absolute"}
         sx={{ top: "40%", left: "50.2%", transform: "translateX(-50%)" }}
@@ -91,8 +129,7 @@ const Home = () => {
           {t("homeTituloBlanco")}
         </Typography>
       </Box>
-      <Mouse2/>
-    {/*   <Mouse2 /> */}
+      <Mouse2 />
     </>
   );
 };

@@ -1,4 +1,6 @@
 import { Box, Typography, styled } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const floatAnimationX = `
   @keyframes floatAnimationX {
@@ -47,29 +49,45 @@ const FloatingImage1 = styled("img")`
 `;
 
 const NavBar1 = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false); // Estado para controlar la visibilidad del menú
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsSticky(scrollTop > 800); // Cambia a true cuando el scroll es mayor a 800px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible); // Cambia la visibilidad del menú al hacer clic en el logo
+  };
   return (
     <>
       <Box
-        position={"absolute"}
-        top={0}
         width={"100%"}
-        height={"60px"}
-        m={"auto"}
+        height={"44px"}
         overflow={"hidden"}
         bgcolor={"transarent"}
       >
-       {/*   <Box >
-       <img width={"100%"}src="/navBar/navBar.png" alt="" />
-       </Box>  */}
+        <Box>
+          <img width={"100%"} src="/navBar/navBar.png" alt="" />
+        </Box>
 
         <Box
           bgcolor={"transparent"}
           display={"flex"}
           position={"absolute"}
-        
+          top={0}
           width={"100%"}
           m={"auto"}
-          height={"120px"} // Altura mayor para las esferas
+          height={"44px"} // Altura mayor para las esferas
           overflow={"hidden"} // Corta las esferas que se salen del Navbar
         >
           <FloatingImage1
@@ -247,10 +265,10 @@ const NavBar1 = () => {
           bgcolor={"transparent"}
           display={"flex"}
           position={"absolute"}
-          sx={{ top: "5%", left: "0%", zIndex: 0 }}
+          sx={{ top: "0", left: "0%", zIndex: 0 }}
           width={"100%"}
           m={"auto"}
-          height={"120px"} // Altura mayor para las esferas
+          height={"44px"} // Altura mayor para las esferas
           overflow={"hidden"} // Corta las esferas que se salen del Navbar
         >
           <FloatingImage1
@@ -302,7 +320,6 @@ const NavBar1 = () => {
             alt="drayTek"
           />
           <FloatingImage1
-          
             width={"80px"}
             height={"80px"} // Tamaño más grande
             src="/home/home36.png"
@@ -634,49 +651,109 @@ const NavBar1 = () => {
 
         <Box
           position={"absolute"}
-          top={"-5px"}
-          left={"37%"}
+          top={"0px"}
+          left={"40.5%"}
           width={"20%"}
           m={"auto"}
           display={"flex"}
           justifyContent={"space-around"}
         >
-          <Box>
+          <Box
+            component={Link}
+            to={"/somos"}
+            style={{ textDecoration: "none" }}
+          >
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontSize: "45px",
+                fontSize: "18px",
                 color: "white",
+                mt: "5px",
               }}
             >
               Somos
             </Typography>
           </Box>
-          <Box>
-            <Typography
-              sx={{
-                ml: 4,
-                fontFamily: "acumin-pro",
-                fontSize: "45px",
-                color: "white",
-              }}
-            >
-              S
-            </Typography>
+          <Box
+            component={Link}
+            to={"/"}
+            style={{ textDecoration: "none" }}
+            mt={1}
+          >
+            <img src="/navBar/sNav.png" alt="navBar" />
           </Box>
-          <Box>
+          <Box
+            component={Link}
+            to={"/proyectos"}
+            style={{ textDecoration: "none" }}
+          >
             <Typography
               sx={{
-                ml: 4,
                 fontFamily: "acumin-pro",
-                fontSize: "45px",
+                fontSize: "18px",
                 color: "white",
+                mt: "5px",
+                ml: -1,
               }}
             >
               Hacemos
             </Typography>
           </Box>
         </Box>
+      </Box>
+      {/* Menú de contacto y logo */}
+      <Box
+        position={"fixed"}
+        top={40} // Posición fija desde el top de la ventana
+        right={"5%"} // Ajusta según sea necesario
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"end"}
+        zIndex={100}
+        style={{
+          opacity: isSticky ? 1 : 0, // Oculta el elemento si no es sticky
+        }}
+      >
+        <Box onClick={toggleMenu} style={{ cursor: "pointer" }}>
+          <img src="/navBar/logo.png" alt="logo" />
+        </Box>
+
+        {/* Enlaces de Hacemos y Contacto, visibles solo si menuVisible es true */}
+        {menuVisible && (
+          <Box>
+            <Typography
+              component={Link}
+              to={"/proyectos"}
+              sx={{
+                display: "block",
+                textDecoration: "none",
+                fontFamily: "acumin-pro",
+                fontSize: "16px",
+                height: "20px",
+                fontWeight: "100",
+                color: "white",
+                mt: 1,
+              }}
+            >
+              Hacemos
+            </Typography>
+            <Typography
+              component={Link}
+              to={"/contacto"}
+              sx={{
+                textDecoration: "none",
+                fontFamily: "acumin-pro",
+                fontSize: "16px",
+                height: "20px",
+                fontWeight: 100,
+                color: "white",
+                mt: 1,
+              }}
+            >
+              Contacto
+            </Typography>
+          </Box>
+        )}
       </Box>
     </>
   );

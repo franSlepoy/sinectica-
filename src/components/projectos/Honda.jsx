@@ -202,7 +202,7 @@ const Honda = () => {
       </Hidden>
 
       <Hidden only={"xl"}>
-        <NavBar/>
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}

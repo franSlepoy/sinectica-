@@ -3,6 +3,7 @@ import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
+import NavBar1 from "../NavBar/NavBar1";
 
 const ObrasPublicas = () => {
   const { t, i18n } = useTranslation();
@@ -16,7 +17,7 @@ const ObrasPublicas = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar1 />
       <Box>
         <img
           style={{ objectFit: "cover" }}

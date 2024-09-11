@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar1 from "../NavBar/NavBar1";
 import NavBar from "../NavBar/NavBar";
+import WithLoader from "../WithLoader";
 
 // Estilos para las imágenes de los proyectos
 const ProjectCard = styled(Box)`
@@ -177,7 +178,8 @@ export default function Proyectos() {
 
   return (
     <>
-      <NavBar />
+    <WithLoader>
+    <NavBar1 />
       <Box m={"auto"} mt={5} width={"80%"} p={4}>
         <Box
           sx={{ width: "40%", m: "auto" }}
@@ -247,6 +249,14 @@ export default function Proyectos() {
           ))}
         </Box>
       </Box>
+      <Box position={"absolute"} top={"50%"} left={"5%"}>
+        <img src="/proyectos/diseno1.png" alt="" />
+      </Box>
+      <Box position={"absolute"} top={"50%"} right={"5%"}>
+        <img src="/proyectos/diseno2.png" alt="" />
+      </Box>
+    </WithLoader>
+    
     </>
   );
 }

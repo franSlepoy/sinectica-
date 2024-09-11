@@ -99,7 +99,7 @@ const Tyme = () => {
   return (
     <>
       <Hidden lgDown>
-        <NavBar/>
+        <NavBar1/>
         <Box>
           <img
             style={{ objectFit: "cover" }}

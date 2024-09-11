@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
+import WithLoader from "../WithLoader";
+
+
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
@@ -94,6 +97,7 @@ const FadingImage6 = styled(Box)`
 `;
 
 const PSA = () => {
+  
   const { t, i18n } = useTranslation();
   const [imageIndices, setImageIndices] = useState([0, 0, 0]);
   const [showSecondImage, setShowSecondImage] = useState(false);
@@ -155,10 +159,12 @@ const PSA = () => {
 
     return () => clearInterval(interval);
   }, []);
+  
 
   return (
     <>
-      <Hidden only={"lg"}>
+    <WithLoader>
+    <Hidden only={"lg"}>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -647,7 +653,7 @@ const PSA = () => {
         </Box>
       </Hidden>
       <Hidden only={"xl"}>
-        <NavBar />
+        <NavBar1 />
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -1138,6 +1144,8 @@ const PSA = () => {
           </FadingImage6>
         </Box>
       </Hidden>
+    </WithLoader>
+    
     </>
   );
 };

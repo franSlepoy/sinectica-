@@ -54,7 +54,7 @@ const SanMartin1 = () => {
   return (
     <>
       <Hidden lgDown>
-        <NavBar />
+        <NavBar1 />
         <Box>
           <img
             style={{ objectFit: "cover" }}

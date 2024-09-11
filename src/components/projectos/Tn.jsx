@@ -1,13 +1,14 @@
 import { Box, Hidden, Typography } from "@mui/material";
 import NavBar from "../NavBar/NavBar";
 import { useTranslation } from "react-i18next";
+import NavBar1 from "../NavBar/NavBar1";
 
 const Tn = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
       <Hidden lgDown>
-        <NavBar />
+        <NavBar1 />
         <Box>
           <img
             style={{ objectFit: "cover" }}

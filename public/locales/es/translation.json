@@ -1,7 +1,10 @@
 {
     "languageButton": "ENG",
     "homeProyectos": "Proyectos",
-    "homeTituloBlanco": "DISEÑO CON CÓDIGO",
+    "homeTituloBlanco": "Diseño con código",
+    "homeTitulo1":"Somos",
+    "homeTitulo2":"Sinectíca",
+    "homeTitulo3":"Hacemos",
 
     "clienteProyectos": "Cliente",
     "proyecto": "Proyecto",

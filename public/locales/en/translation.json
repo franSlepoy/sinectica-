@@ -1,8 +1,11 @@
 {
     "languageButton": "ESP",
     "homeProyectos": "Proyects",
-    "homeTituloBlanco": "DESIGN WITH CODE",
-
+    "homeTituloBlanco": "Design with code",
+    "homeTitulo1":"We are",
+    "homeTitulo2":"Synéctica",
+    "homeTitulo3":"We do",
+    
     "clienteProyectos": "Client",
     "proyecto": "Proyect",
     "fecha":"Year"

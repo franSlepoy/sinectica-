@@ -106,7 +106,7 @@ const DrayTek = () => {
   return (
     <>
       <Hidden lgDown>
-        <NavBar />
+        <NavBar1 />
         <Box>
           <img
             width={"100%"}
