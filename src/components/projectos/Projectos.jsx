@@ -1,9 +1,12 @@
-import { Box, Typography, styled } from "@mui/material";
+import { Box, Hidden, Typography, styled } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar1 from "../NavBar/NavBar1";
-import NavBar from "../NavBar/NavBar";
+
 import WithLoader from "../WithLoader";
+import NavMobile from "../NavBar/NavMobile";
+import ProyectosMobile from "./ProyectosMobile";
+import NavMobileAzul from "../NavBar/NavMobileAzul";
 
 // Estilos para las imágenes de los proyectos
 const ProjectCard = styled(Box)`
@@ -98,7 +101,7 @@ const projectsData = [
   {
     id: 7,
     title: "San Martín",
-    category: "Institucionales",
+    category: "Institucional",
     img1: "/proyectos/proyecto7.png",
     img2: "/proyectos/proyecto7Hover.png",
     link: "/SanMartín1",
@@ -106,7 +109,7 @@ const projectsData = [
   {
     id: 8,
     title: "PSA",
-    category: "Institucionales",
+    category: "Institucional",
     img1: "/proyectos/proyecto8.png",
     img2: "/proyectos/proyecto8Hover.png",
     link: "/PSA",
@@ -114,7 +117,7 @@ const projectsData = [
   {
     id: 9,
     title: "Institucionales",
-    category: "",
+    category: "Institucional",
     img1: "/proyectos/proyecto9.png",
     img2: "/proyectos/proyecto9Hover.png",
     link: "/Gramon",
@@ -122,7 +125,7 @@ const projectsData = [
   {
     id: 10,
     title: "Honda",
-    category: "Institucionales",
+    category: "Institucional",
     img1: "/proyectos/proyecyo10.png",
     img2: "/proyectos/proyecto10Hover.png",
     link: "/Honda1",
@@ -168,6 +171,8 @@ const projectsData = [
   },
 ];
 
+
+
 export default function Proyectos() {
   const [activeCategory, setActiveCategory] = useState("");
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -178,7 +183,7 @@ export default function Proyectos() {
 
   return (
     <>
-    <WithLoader>
+    <Hidden smDown>
     <NavBar1 />
       <Box m={"auto"} mt={5} width={"80%"} p={4}>
         <Box
@@ -186,7 +191,7 @@ export default function Proyectos() {
           display="flex"
           justifyContent="center"
         >
-          {["Digital", "Editorial", "Institucionales"].map((category) => (
+          {["Digital", "Editorial", "Institucional"].map((category) => (
             <Button
               key={category}
               sx={{
@@ -250,12 +255,25 @@ export default function Proyectos() {
         </Box>
       </Box>
       <Box position={"absolute"} top={"50%"} left={"5%"}>
-        <img src="/proyectos/diseno1.png" alt="" />
+        <img height={"130px"} style={{objectFit:"cover"}} src="/proyectos/diseno2.png" alt="" />
       </Box>
       <Box position={"absolute"} top={"50%"} right={"5%"}>
-        <img src="/proyectos/diseno2.png" alt="" />
+        <img height={"130px"} style={{objectFit:"cover"}} src="/proyectos/diseno1.png" alt="" />
       </Box>
-    </WithLoader>
+    </Hidden>
+<Hidden smUp>
+ <NavMobileAzul/> 
+<ProyectosMobile/>
+<Box position={"fixed"} top={"50%"} left={"2%"}>
+        <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno2.png" alt="" />
+      </Box>
+      <Box position={"fixed"} top={"50%"} right={"2%"}>
+        <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno1.png" alt="" />
+      </Box>
+</Hidden>
+   
+
+  
     
     </>
   );

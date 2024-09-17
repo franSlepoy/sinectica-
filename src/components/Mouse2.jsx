@@ -92,7 +92,7 @@ const Mouse2 = () => {
     };
   }, []);
 
-  return <canvas style={{ width:"100%", height:"800px", zIndex:1}}  ref={canvasRef} className="particle-canvas" />;
+  return <canvas style={{ width:"100%", height:"100vh", zIndex:1}}  ref={canvasRef} className="particle-canvas" />;
 };
 
 export default Mouse2;

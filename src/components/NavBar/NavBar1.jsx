@@ -1,6 +1,7 @@
 import { Box, Typography, styled } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Links from "./Links";
 
 const floatAnimationX = `
   @keyframes floatAnimationX {
@@ -77,7 +78,13 @@ const NavBar1 = () => {
         bgcolor={"transarent"}
       >
         <Box>
-          <img width={"100%"} src="/navBar/navBar.png" alt="" />
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"44px"}
+            src="/navBar/navBar.png"
+            alt=""
+          />
         </Box>
 
         <Box
@@ -680,7 +687,12 @@ const NavBar1 = () => {
             style={{ textDecoration: "none" }}
             mt={1}
           >
-            <img src="/navBar/sNav.png" alt="navBar" />
+            <img
+              height={"30px"}
+              style={{ objectFit: "cover" }}
+              src="/navBar/sNav.png"
+              alt="navBar"
+            />
           </Box>
           <Box
             component={Link}
@@ -715,7 +727,12 @@ const NavBar1 = () => {
         }}
       >
         <Box onClick={toggleMenu} style={{ cursor: "pointer" }}>
-          <img src="/navBar/logo.png" alt="logo" />
+          <img
+            height={"35px"}
+            style={{ objectFit: "cover" }}
+            src="/navBar/logo.png"
+            alt="logo"
+          />
         </Box>
 
         {/* Enlaces de Hacemos y Contacto, visibles solo si menuVisible es true */}
@@ -733,28 +750,39 @@ const NavBar1 = () => {
                 fontWeight: "100",
                 color: "white",
                 mt: 1,
+                textAlign: "right",
               }}
             >
               Hacemos
             </Typography>
-            <Typography
-              component={Link}
-              to={"/contacto"}
-              sx={{
-                textDecoration: "none",
-                fontFamily: "acumin-pro",
-                fontSize: "16px",
-                height: "20px",
-                fontWeight: 100,
-                color: "white",
-                mt: 1,
-              }}
+            <a
+             style={{textDecoration:"none"}}
+              href="https://wa.me/5491131992441"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contacto
-            </Typography>
+              <Typography
+                sx={{
+                  textDecoration: "none",
+                  fontFamily: "acumin-pro",
+                  fontSize: "16px",
+                  height: "20px",
+                  fontWeight: 100,
+                  color: "white",
+                  mt: 1,
+                  ml: "3px",
+                  textAlign: "end",
+                  
+                }}
+              >
+                Contacto
+              </Typography>
+            </a>
           </Box>
         )}
       </Box>
+
+      <Links />
     </>
   );
 };

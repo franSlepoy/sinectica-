@@ -3,6 +3,7 @@ import { styled, keyframes } from "@mui/system";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
+import NavMobile from "../NavBar/NavMobile";
 
 /*  const typing = keyframes`
   0% { width: 0; }
@@ -33,13 +34,7 @@ const AnimatedTextContainer = styled(Box)`
  */
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
-  top: 1062px;
-  left: 50.1%;
-  transform: translateX(-50%);
-  /*  left: 382px;  */
-  /*  left: 26.5%;  */
-  width: 684px;
-  height: 418px;
+
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
@@ -73,7 +68,7 @@ const floatAnimation = `
 
 const FloatingImage = styled("img")`
   ${floatAnimation}
-  
+
   animation: floatAnimation 5s ease-in-out infinite;
 `;
 
@@ -90,7 +85,7 @@ const floatAnimation1 = `
 `;
 const FloatingImage1 = styled("img")`
   ${floatAnimation1}
-  
+
   animation: floatAnimation 8s ease-in-out infinite;
 `;
 
@@ -98,8 +93,8 @@ const Tyme = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
-      <Hidden lgDown>
-        <NavBar1/>
+      <Hidden smDown>
+        <NavBar1 />
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -109,9 +104,8 @@ const Tyme = () => {
             alt="Portada de tyme"
           />
         </Box>
-       
 
-       {/*   <AnimatedTextContainer bgcolor={"#1296E9"} pt={5} mt={-1}>
+        {/*   <AnimatedTextContainer bgcolor={"#1296E9"} pt={5} mt={-1}>
           <Box>
             <Typography
               sx={{
@@ -186,12 +180,11 @@ const Tyme = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}:{" "}
-              <strong>Tyme Consulting</strong>
+              {t("clienteProyectos")}: <strong>Tyme Consulting</strong>
             </Typography>
           </Box>
-          
-          <Box >
+
+          <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
@@ -241,7 +234,15 @@ const Tyme = () => {
           <img src="tyme/tyme2.png" alt="computadora" />
         </Box>
 
-        <ScrollableImageContainer>
+        <ScrollableImageContainer
+          style={{
+            top: "1062px",
+            left: "50.1%",
+            transform: "translateX(-50%)",
+            width: "684px",
+            height: "418px",
+          }}
+        >
           <img
             width={"677px"}
             style={{ objectFit: "cover" }}
@@ -262,7 +263,7 @@ const Tyme = () => {
         <Box
           position={"absolute"}
           top={"1790px"}
-          sx={{ left: "28.6%", transform: "translateX(-50%)", zIndex:10 }}
+          sx={{ left: "28.6%", transform: "translateX(-50%)", zIndex: 10 }}
         >
           <img
             width={"890px"}
@@ -274,19 +275,31 @@ const Tyme = () => {
         <Box position={"absolute"} top={"1859px"} width={"100%"}>
           <FloatingImage width={"100%"} src="tyme/tyme6.png" alt="drayTek" />
         </Box>
-        <Box position={"absolute"} top={"1859px"} sx={{ left: "58.6%", transform: "translateX(-50%)" }} >
-          <FloatingImage1  src="tyme/tyme7.png" alt="drayTek" />
+        <Box
+          position={"absolute"}
+          top={"1859px"}
+          sx={{ left: "58.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 src="tyme/tyme7.png" alt="drayTek" />
         </Box>
-        <Box position={"absolute"} top={"1959px"} sx={{ left: "68.6%", transform: "translateX(-50%)" }} >
-          <FloatingImage  src="tyme/tyme8.png" alt="drayTek" />
+        <Box
+          position={"absolute"}
+          top={"1959px"}
+          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage src="tyme/tyme8.png" alt="drayTek" />
         </Box>
-        <Box position={"absolute"} top={"2159px"} sx={{ left: "68.6%", transform: "translateX(-50%)" }} >
-          <FloatingImage1  src="tyme/tyme9.png" alt="drayTek" />
+        <Box
+          position={"absolute"}
+          top={"2159px"}
+          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 src="tyme/tyme9.png" alt="drayTek" />
         </Box>
         <Box
           position={"absolute"}
           top={"1859px"}
-          sx={{ left: "28%", transform: "translateX(-50%)", zIndex:11 }}
+          sx={{ left: "28%", transform: "translateX(-50%)", zIndex: 11 }}
         >
           <video
             muted
@@ -297,13 +310,18 @@ const Tyme = () => {
           />
         </Box>
         <Box mt={-1} width={"100%"} height={"820px"} bgcolor={"#A0D5F6"}>
-          <Box textAlign={"center"} pt={8}>
+          <Box
+            textAlign={"center"}
+            position={"absolute"}
+            top={"2788px"}
+            sx={{ left: "50%", transform: "translateX(-50%)" }}
+          >
             <img src="tyme/tyme2.png" alt="computadora" />
           </Box>
         </Box>
         <Box
           position={"absolute"}
-          top={"2869px"}
+          top={"2909px"}
           sx={{ left: "50.2%", transform: "translateX(-50%)" }}
         >
           <video
@@ -317,6 +335,256 @@ const Tyme = () => {
             src="tyme/tymeEscritorio.mov"
           />
         </Box>
+      </Hidden>
+
+      <Hidden smUp>
+        {/* <NavMobile/> */}
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            width={"100%"}
+            src="tyme/tymeMobile1.png"
+            alt="Portada de tyme"
+          />
+        </Box>
+
+        {/*   <AnimatedTextContainer bgcolor={"#1296E9"} pt={5} mt={-1}>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "black",
+              }}
+            >
+              <AnimatedText>
+                Cliente: <strong>Tyme</strong>
+              </AnimatedText>
+            </Typography>
+          </Box>
+          <Box ml={8} width={"300px"}>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "black",
+              }}
+            >
+              <AnimatedText>
+                <a
+                  target="_blank"
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="https://www.tyme-consulting.com/"
+                >
+                  Proyecto: <strong>Sitio Web</strong>
+                </a>
+              </AnimatedText>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "Inter",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "black",
+              }}
+            >
+              <AnimatedText>
+                Año: <strong>2024</strong>
+              </AnimatedText>
+            </Typography>
+          </Box>
+        </AnimatedTextContainer>  */}
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "340px",
+            width: "90%",
+            left: "5%",
+            height: "118px",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>Tyme Consulting</strong>
+            </Typography>
+          </Box>
+
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Web</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2024</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box mt={"-8px"}>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"360px"}
+            width={"100%"}
+            src="tyme/tymeMobile2.png"
+            alt="tyme, imagen de fondo"
+          />
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"582px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            height={"200px"}
+            width={"300px"}
+            src="tyme/tyme2.png"
+            alt="computadora"
+          />
+        </Box>
+
+        <ScrollableImageContainer
+          style={{
+            top: "614px",
+            left: "50.4%",
+            transform: "translateX(-50%)",
+            width: "200px",
+            height: "118px",
+          }}
+        >
+          <img
+            width={"193px"}
+            style={{ objectFit: "cover" }}
+            src="tyme/tyme3.png"
+            alt="imagen de home de pagina"
+          />
+        </ScrollableImageContainer>
+
+        <Box mt={-1}>
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"412px"}
+            src="tyme/tyme4.png"
+            alt="celu fondo"
+          />
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"855px"}
+          sx={{ left: "50%", transform: "translateX(-50%)", zIndex: 10 }}
+        >
+          <img
+            width={"198px"}
+            height={"388px"}
+            src="tyme/celuMobileTyme.png"
+            alt="celu"
+          />
+        </Box>
+        <Box position={"absolute"} top={"948px"} width={"100%"}>
+          <FloatingImage width={"100%"} src="tyme/tyme6.png" alt="drayTek" />
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"1059px"}
+          sx={{ left: "88.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 width={"100%"} src="tyme/tyme7.png" alt="drayTek" />
+        </Box>
+        {/* <Box
+          position={"absolute"}
+          top={"1959px"}
+          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage src="tyme/tyme8.png" alt="drayTek" />
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"2159px"}
+          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 src="tyme/tyme9.png" alt="drayTek" />
+        </Box> */}
+        <Box
+          position={"absolute"}
+          top={"870px"}
+          sx={{ left: "50.2%", transform: "translateX(-50%)", zIndex: 11 }}
+        >
+          <video
+            muted
+            autoPlay
+            loop
+            style={{ width:"168px",height:"362px", objectFit: "cover", borderRadius: "18px" }}
+            src="tyme/tymeMobile.mov"
+          />
+        </Box>
+        <Box  mt={-1} width={"100%"} height={"260px"} bgcolor={"#A0D5F6"}>
+          <Box
+            textAlign={"center"}
+            position={"absolute"}
+            top={"1268px"}
+            sx={{ left: "50%", transform: "translateX(-50%)" }}
+          >
+            <img width={"300px"} height={"220px"} src="tyme/tyme2.png" alt="computadora" />
+          </Box>
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"1306px"}
+          sx={{ left: "50.2%", transform: "translateX(-50%)" }}
+        >
+          <video
+            muted
+            preload="auto"
+            autoPlay
+            loop
+            style={{ objectFit: "cover" }}
+            width={"188px"}
+            height={"120px"}
+            src="tyme/tymeEscritorio.mov"
+          />
+        </Box>
+       
       </Hidden>
     </>
   );

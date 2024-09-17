@@ -78,7 +78,7 @@ const Home = () => {
             color: "#0068FF",
           }}
         >
-          {t("homeTitulo2")}
+          Sinestesia
         </Typography>
         <Typography
           sx={{
@@ -99,7 +99,7 @@ const Home = () => {
         to={"/proyectos"}
         position={"absolute"}
         sx={{
-          top: "700px",
+          top: "90%",
           left: "50%",
           transform: "translateX(-50%)",
           bgcolor: "#0068FF",
@@ -119,12 +119,15 @@ const Home = () => {
       >
         <Typography
           sx={{
-            fontSize: "60px",
+         
+            width:"758px",
+            fontSize: "80px",
             fontFamily: "acumin-pro",
             color: "white",
-            fontWeight: "bold",
+            fontWeight: "800",
+            
           }}
-          variant="h3"
+          
         >
           {t("homeTituloBlanco")}
         </Typography>
