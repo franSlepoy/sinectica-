@@ -10,7 +10,7 @@ const NavMobile = () => {
   return (
     <>
       <Box position={"fixed"} left={"15%"} top={40} zIndex={20}>
-        <Typography
+        {/* <Typography
           sx={{
             fontFamily: "acumin-pro",
             fontSize: "30px",
@@ -20,7 +20,8 @@ const NavMobile = () => {
           }}
         >
           Sinestesia
-        </Typography>
+        </Typography> */}
+        <img src="/navBar/SiBlanco.svg" alt="" />
       </Box>
 
       {/* Menú de contacto y logo */}

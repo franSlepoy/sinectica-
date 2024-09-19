@@ -163,23 +163,24 @@ export default function ProyectosMobile() {
     : projectsData;
 
   return (
-    <Box m={"auto"} mt={12} width={"80%"} >
+    <Box m={"auto"} mt={12} width={"70%"} >
       <Box
         sx={{ width: "100%" }}
         display="flex"
         justifyContent="space-between"
-        flexWrap="wrap"
+        flexWrap="nowrap"
         mb={2}
         ml={-1}
       >
         {["Digital", "Editorial", "Institucional"].map((category) => (
+          
           <Button
             key={category}
             onClick={() => handleCategoryClick(category)}
             isActive={activeCategory === category}
             
           >
-            <Typography sx={{ fontFamily: "acumin-pro",}} fontSize={"13px"} >
+            <Typography sx={{ fontFamily: "acumin-pro", width:"33.3%"}} fontSize={"13px"} >
             {category}
             </Typography>
             

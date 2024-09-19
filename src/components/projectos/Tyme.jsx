@@ -338,7 +338,7 @@ const Tyme = () => {
       </Hidden>
 
       <Hidden smUp>
-        {/* <NavMobile/> */}
+        <NavMobile />
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -406,9 +406,9 @@ const Tyme = () => {
           sx={{
             backgroundColor: "rgba(255, 255, 255, 0.16)",
             position: "absolute",
-            top: "340px",
-            width: "90%",
-            left: "5%",
+            top: "320px",
+            width: "80%",
+            left: "10%",
             height: "118px",
           }}
         >
@@ -463,7 +463,7 @@ const Tyme = () => {
         <Box mt={"-8px"}>
           <img
             style={{ objectFit: "cover" }}
-            height={"360px"}
+            height={"290px"}
             width={"100%"}
             src="tyme/tymeMobile2.png"
             alt="tyme, imagen de fondo"
@@ -472,28 +472,29 @@ const Tyme = () => {
 
         <Box
           position={"absolute"}
-          top={"582px"}
+          top={"542px"}
           sx={{ left: "50%", transform: "translateX(-50%)" }}
         >
           <img
-            height={"200px"}
             width={"300px"}
-            src="tyme/tyme2.png"
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
             alt="computadora"
           />
         </Box>
 
         <ScrollableImageContainer
           style={{
-            top: "614px",
-            left: "50.4%",
+            top: "558px",
+            left: "50.2%",
             transform: "translateX(-50%)",
-            width: "200px",
-            height: "118px",
+
+            width: "228px",
+            height: "142px",
           }}
         >
           <img
-            width={"193px"}
+            width={"220px"}
             style={{ objectFit: "cover" }}
             src="tyme/tyme3.png"
             alt="imagen de home de pagina"
@@ -501,76 +502,67 @@ const Tyme = () => {
         </ScrollableImageContainer>
 
         <Box mt={-1}>
+          <img height={"430px"} width={"100%"} style={{objectFit:"cover"}} src="/tyme/tyme4.png" alt="" />
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"782px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
           <img
+            width={"200px"}
+            height={"418px"}
             style={{ objectFit: "cover" }}
-            width={"100%"}
-            height={"412px"}
-            src="tyme/tyme4.png"
-            alt="celu fondo"
+            src="tyme/tyme5.png"
+            alt="celular del medio"
           />
         </Box>
+
         <Box
           position={"absolute"}
-          top={"855px"}
-          sx={{ left: "50%", transform: "translateX(-50%)", zIndex: 10 }}
-        >
-          <img
-            width={"198px"}
-            height={"388px"}
-            src="tyme/celuMobileTyme.png"
-            alt="celu"
-          />
-        </Box>
-        <Box position={"absolute"} top={"948px"} width={"100%"}>
-          <FloatingImage width={"100%"} src="tyme/tyme6.png" alt="drayTek" />
-        </Box>
-        <Box
-          position={"absolute"}
-          top={"1059px"}
-          sx={{ left: "88.6%", transform: "translateX(-50%)" }}
-        >
-          <FloatingImage1 width={"100%"} src="tyme/tyme7.png" alt="drayTek" />
-        </Box>
-        {/* <Box
-          position={"absolute"}
-          top={"1959px"}
-          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
-        >
-          <FloatingImage src="tyme/tyme8.png" alt="drayTek" />
-        </Box>
-        <Box
-          position={"absolute"}
-          top={"2159px"}
-          sx={{ left: "68.6%", transform: "translateX(-50%)" }}
-        >
-          <FloatingImage1 src="tyme/tyme9.png" alt="drayTek" />
-        </Box> */}
-        <Box
-          position={"absolute"}
-          top={"870px"}
-          sx={{ left: "50.2%", transform: "translateX(-50%)", zIndex: 11 }}
+          top={"818px"}
+          sx={{ left: "49.0%", transform: "translateX(-50%)", zIndex: 11 }}
         >
           <video
             muted
             autoPlay
             loop
-            style={{ width:"168px",height:"362px", objectFit: "cover", borderRadius: "18px" }}
+            style={{ width:"168px",height:"342px", objectFit: "cover", borderRadius: "18px" }}
             src="tyme/tymeMobile.mov"
           />
-        </Box>
-        <Box  mt={-1} width={"100%"} height={"260px"} bgcolor={"#A0D5F6"}>
-          <Box
-            textAlign={"center"}
-            position={"absolute"}
-            top={"1268px"}
-            sx={{ left: "50%", transform: "translateX(-50%)" }}
-          >
-            <img width={"300px"} height={"220px"} src="tyme/tyme2.png" alt="computadora" />
-          </Box>
+        </Box> 
+
+       
+        <Box position={"absolute"} top={"848px"} width={"100%"}>
+          <FloatingImage width={"100%"} src="tyme/tyme6.png" alt="drayTek" />
         </Box>
         <Box
           position={"absolute"}
-          top={"1306px"}
+          top={"959px"}
+          sx={{ left: "88.6%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1 width={"100%"} src="tyme/tyme7.png" alt="drayTek" />
+        </Box>
+       
+    <Box sx={{mt:-2, height:"280px", bgcolor:"#A0D5F6", width:"100%",}}>
+    <Box
+          position={"absolute"}
+          top={"1242px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"300px"}
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
+            alt="computadora"
+          />
+        </Box>
+
+
+        <Box
+          position={"absolute"}
+          top={"1258px"}
           sx={{ left: "50.2%", transform: "translateX(-50%)" }}
         >
           <video
@@ -579,11 +571,12 @@ const Tyme = () => {
             autoPlay
             loop
             style={{ objectFit: "cover" }}
-            width={"188px"}
-            height={"120px"}
+            width={"228px"}
+            height={"138px"}
             src="tyme/tymeEscritorio.mov"
           />
         </Box>
+    </Box>
        
       </Hidden>
     </>

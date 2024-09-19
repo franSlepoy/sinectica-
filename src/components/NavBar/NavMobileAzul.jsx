@@ -9,25 +9,26 @@ const NavMobileAzul = () => {
   };
   return (
     <>
-      <Box position={"fixed"} left={"10%"} top={40} zIndex={20} >
-        <Typography
+      <Box position={"fixed"} left={"15%"} top={40} zIndex={20} >
+       {/*  <Typography
           sx={{
             fontFamily: "acumin-pro",
-            fontSize: "30px",
+            fontSize: "28px",
             mt: -1,
             fontWeight: "normal",
-            color: "#0068FF",
+            color: "#202B61",
           }}
         >
           Sinestesia
-        </Typography>
+        </Typography> */}
+        <img src="/navBar/Sinestesia.svg" alt="" />
       </Box>
 
       {/* Menú de contacto y logo */}
       <Box
         position={"fixed"}
         top={40} // Posición fija desde el top de la ventana
-        right={"10%"} // Ajusta según sea necesario
+        right={"15%"} // Ajusta según sea necesario
         display={"flex"}
         flexDirection={"column"}
         alignItems={"end"}
@@ -55,7 +56,7 @@ const NavMobileAzul = () => {
                 fontSize: "16px",
                 height: "20px",
                 fontWeight: "normal",
-                color: "#0068FF",
+                color: "#202B61",
                 mt: 1,
                 textAlign: "right",
               }}
@@ -76,7 +77,7 @@ const NavMobileAzul = () => {
                   fontWeight: "normal",
                   height: "20px",
 
-                  color: "#0068FF",
+                  color: "#202B61",
                   mt: 1,
                   ml: "3px",
                   textAlign: "end",

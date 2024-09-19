@@ -264,10 +264,10 @@ export default function Proyectos() {
 <Hidden smUp>
  <NavMobileAzul/> 
 <ProyectosMobile/>
-<Box position={"fixed"} top={"50%"} left={"2%"}>
+<Box position={"fixed"} top={"50%"} left={"4%"}>
         <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno2.png" alt="" />
       </Box>
-      <Box position={"fixed"} top={"50%"} right={"2%"}>
+      <Box position={"fixed"} top={"50%"} right={"4%"}>
         <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno1.png" alt="" />
       </Box>
 </Hidden>
