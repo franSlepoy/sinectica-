@@ -5,8 +5,7 @@ import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
 import WithLoader from "../WithLoader";
-
-
+import NavMobile from "../NavBar/NavMobile";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
@@ -68,12 +67,9 @@ const FadingImage = styled(Box)`
   position: absolute;
 
   /* left: 47%; */
- 
 `;
 
-const FadingImage1 = styled(Box)`
-
-`;
+const FadingImage1 = styled(Box)``;
 
 const FadingImage2 = styled(Box)`
   position: absolute;
@@ -97,7 +93,6 @@ const FadingImage6 = styled(Box)`
 `;
 
 const PSA = () => {
-  
   const { t, i18n } = useTranslation();
   const [imageIndices, setImageIndices] = useState([0, 0, 0]);
   const [showSecondImage, setShowSecondImage] = useState(false);
@@ -159,12 +154,10 @@ const PSA = () => {
 
     return () => clearInterval(interval);
   }, []);
-  
 
   return (
     <>
-    <WithLoader>
-    <Hidden only={"lg"}>
+      <Hidden only={"lg"} smDown>
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -652,7 +645,7 @@ const PSA = () => {
           </FadingImage6>
         </Box>
       </Hidden>
-      <Hidden only={"xl"}>
+      <Hidden only={"xl"} smDown>
         <NavBar1 />
         <Box>
           <img
@@ -1144,8 +1137,302 @@ const PSA = () => {
           </FadingImage6>
         </Box>
       </Hidden>
-    </WithLoader>
-    
+
+      <Hidden smUp>
+        <NavMobile />
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            width={"100%"}
+            src="psa/psa.png"
+            alt="portada de PSA"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "320px",
+            width: "80%",
+            left: "10%",
+            height: "158px",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2010 - 2020</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"542px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"300px"}
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
+            alt="computadora"
+          />
+        </Box>
+
+        <ScrollableImageContainer
+          style={{
+            top: "558px",
+            left: "50.2%",
+            transform: "translateX(-50%)",
+
+            width: "228px",
+            height: "142px",
+          }}
+        >
+          <img
+            width={"220px"}
+            style={{ objectFit: "cover" }}
+            src="/psa/psa2.png"
+            alt="imagen de home de pagina"
+          />
+        </ScrollableImageContainer>
+
+        <Box display={"flex"} justifyContent={"center"}>
+          <FadingImage
+            sx={{
+              top: "500px",
+
+              opacity: showSecondImage ? 0 : 1,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"543px"}
+              src="/psa/psa4.png"
+              alt="PSA revista"
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              top: "500px",
+
+              opacity: showSecondImage ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"543px"}
+              src="/psa/psa3.png"
+              alt="PSA revista"
+            />
+          </FadingImage>
+        </Box>
+
+        <Box bgcolor={"#D7D6D5"}>
+          <FadingImage
+            sx={{
+              top: "1050px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              opacity: showSecondImage ? 0 : 1,
+            }}
+          >
+            <img height={"279px"} src="/psa/psa10.png" alt="PSA revista" />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              top: "1050px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              opacity: showSecondImage ? 1 : 0,
+            }}
+          >
+            <img height={"279px"} src="/psa/psa11.png" alt="PSA revista" />
+          </FadingImage>
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"1350px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            style={{ objectFit: "cover" }}
+            height={"160px"}
+            width={"280px"}
+            src="/psa/psa12.png"
+            alt="públicidad de seguridad vial"
+          />
+        </Box>
+
+        <Box>
+          <Box width={"100%"} height={"677px"}>
+            <FadingImage1
+              sx={{
+                position: "absolute",
+                top: "1556px",
+                width: "100%",
+                /*   left: '75%',
+          transform: 'translateX(-50%)', */
+                opacity: showSecondImage ? 0 : 1,
+              }}
+            >
+              <img
+                width={"100%"}
+                style={{ objectFit: "cover" }}
+                height={"677px"}
+                src="/psa/psa14.png"
+                alt="seguridad vial amarillo"
+              />
+            </FadingImage1>
+            <FadingImage1
+              sx={{
+                position: "absolute",
+                top: "1556px",
+                opacity: showSecondImage ? 1 : 0,
+                width: "100%",
+              }}
+            >
+              <img
+                style={{ objectFit: "cover" }}
+                width={"100%"}
+                height={"677px"}
+                src="/psa/psa15.png"
+                alt="seguridad vial celeste"
+              />
+            </FadingImage1>
+          </Box>
+        </Box>
+
+        <Box position="absolute">
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "1000px",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"382px"}
+              src="/psa/psa16.png"
+              alt="imagenes de fondo, autos"
+            />
+          </FadingImage2>
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "0",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"382px"}
+              src="/psa/psa17.png"
+              alt="imagenes de fondo, autos"
+            />
+          </FadingImage2>
+        </Box>
+
+        <Box  height="482px">
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 0 : 1,
+              top: "2200px",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"192px"}
+              src="/psa/psa16.png"
+              alt="imagenes de fondo, autos"
+            />
+          </FadingImage2>
+          <FadingImage2
+            sx={{
+              opacity: showSecondImage ? 1 : 0,
+              top: "2200px",
+              left: 0,
+              right: 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"192px"}
+              src="/psa/psa17.png"
+              alt="imagenes de fondo, autos"
+            />
+          </FadingImage2>
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"2240px"}
+          sx={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <img width={"180px"} src="/psa/psa18.png" alt="Citroen Lounge, auto centrado" />
+        </Box>
+
+        <Box position={"absolute"} p={3} top={"2400px"}>
+          <img width={"100%"} src="/psa/psa19.png" alt="" />
+        </Box>
+
+     
+      </Hidden>
     </>
   );
 };

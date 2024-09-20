@@ -37,10 +37,13 @@ const ScrollableImageContainer = styled(Box)`
 
 const FadingImage = styled(Box)`
   position: absolute;
+  
+ 
   /* top: 1808px;
   left: 258px; */
   transition: opacity 0.3s ease-in-out;
 `;
+
 
 const honda1 = () => {
   const { t, i18n } = useTranslation();
@@ -579,7 +582,7 @@ const honda1 = () => {
           />
         </Box>
 
-        <Box width={"80%"} height={"900px"} pb={10} >
+        <Box  width={"80%"} height={"900px"} pb={10} >
           <FadingImage
             sx={{
               top: "2128px",

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
+import NavMobileAzul from "../NavBar/NavMobileAzul";
 
 const floatAnimation = `
   @keyframes floatAnimation {
@@ -197,7 +198,6 @@ const DrayTek = () => {
           </Box>
         </Box>
 
-      
         <Box height={"720px"}>
           <Box mt={4} textAlign={"center"}>
             <img
@@ -209,7 +209,7 @@ const DrayTek = () => {
           </Box>
         </Box>
         <ScrollableImageContainer
-          sx={{ top: "904px", left: "50.2%", transform: "translateX(-50%)" }}
+          sx={{ top: "944px", left: "50.2%", transform: "translateX(-50%)" }}
         >
           <img width={"653px"} src="/drayTek/drayTek4.png" alt="" />
         </ScrollableImageContainer>
@@ -315,6 +315,221 @@ const DrayTek = () => {
         >
           <FloatingImage src="drayTek/drayTek15.png" alt="15" />
         </Box>
+      </Hidden>
+
+      <Hidden smUp>
+        <NavMobileAzul />
+        <Box
+          width={"80%"}
+          m={"auto"}
+          display={"flex"}
+          justifyContent={"center"}
+        >
+          <img
+            width={"100%"}
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            src="drayTek/DTmobile.png"
+            alt="drayTek"
+          />
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"645px"}
+          sx={{ left: "28%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage
+            width={"100px"}
+            src="/drayTek/drayTek1.png"
+            alt="drayTek"
+          />
+        </Box>
+        <Box
+          position={"absolute"}
+          top={"245px"}
+          sx={{ left: "68%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1
+            width={"100px"}
+            src="/drayTek/drayTek16.png"
+            alt="drayTek"
+          />
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"240px"}
+          sx={{ left: "25%", transform: "translateX(-50%)" }}
+        >
+          <FloatingImage1
+            width={"100px"}
+            src="/drayTek/drayTek2.png"
+            alt="honda"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "320px",
+            width: "80%",
+            left: "10%",
+            height: "118px",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "black",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>Draytek</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Página web</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "black",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2024</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"482px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"300px"}
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
+            alt="computadora"
+          />
+        </Box>
+
+        <ScrollableImageContainer
+          style={{
+            top: "498px",
+            left: "50.2%",
+            transform: "translateX(-50%)",
+
+            width: "228px",
+            height: "142px",
+          }}
+        >
+          <img
+            width={"220px"}
+            style={{ objectFit: "cover" }}
+            src="drayTek/drayTek4.png"
+            alt="imagen de home de pagina"
+          />
+        </ScrollableImageContainer>
+
+      
+
+        <Box>
+          <Box position={"absolute"} mt={32} zIndex={10}>
+            <img
+              width={"230px"}
+              src="/drayTek/drayTek9.png"
+              alt="compuradora"
+            />
+          </Box>
+          <Box
+            position={"absolute"}
+            mt={5}
+            zIndex={0}
+            top={"700px"}
+            sx={{ left: "63%", transform: "translateX(-50%)" }}
+          >
+            <img
+              width={"230px"}
+              src="/drayTek/drayTek8.png"
+              alt="pagina detalle de producto"
+            />
+          </Box>
+        </Box>
+        <Box position={"absolute"} top={"362px"} left={"60%"}>
+          <FloatingImage width={"90px"} src="/drayTek/drayTek10.png" alt="drayTek" />
+        </Box>
+
+        <Box
+          width={"100%"}
+          height={"245px"}
+         position={"absolute"}
+         top={"1080px"}
+          sx={{
+            background: "linear-gradient(225deg, #738DE5 0%, #202B61 100%)",
+          }}
+        >
+               
+    <Box sx={{mt:-2, height:"280px", width:"100%",}}>
+    <Box
+          position={"absolute"}
+          top={"42px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"300px"}
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
+            alt="computadora"
+          />
+        </Box>
+
+
+        <Box
+          position={"absolute"}
+          top={"58px"}
+          sx={{ left: "50.2%", transform: "translateX(-50%)" }}
+        >
+          <video
+            muted
+            preload="auto"
+            autoPlay
+            loop
+            style={{ objectFit: "cover" }}
+            width={"228px"}
+            height={"138px"}
+            src="tyme/tymeEscritorio.mov"
+          />
+        </Box>
+    </Box>
+         
+        </Box>
+       
       </Hidden>
     </>
   );

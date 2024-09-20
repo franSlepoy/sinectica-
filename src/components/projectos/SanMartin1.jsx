@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
+import NavMobile from "../NavBar/NavMobile";
 
 const FadingImage = styled(Box)`
   position: absolute;
@@ -20,13 +21,13 @@ const FadingImage1 = styled(Box)`
 const FadingImage2 = styled(Box)`
   position: absolute;
   top: 5250px;
-/* 
+  /* 
   transition: opacity 0.3s ease-in-out; */
 `;
 const FadingImage3 = styled(Box)`
   position: absolute;
   top: 6120px;
-/* 
+  /* 
   transition: opacity 0.3s ease-in-out; */
 `;
 
@@ -53,7 +54,7 @@ const SanMartin1 = () => {
 
   return (
     <>
-      <Hidden lgDown>
+      <Hidden smDown>
         <NavBar1 />
         <Box>
           <img
@@ -375,7 +376,6 @@ const SanMartin1 = () => {
               alt=""
             />
           </FadingImage2>
-          
         </Box>
 
         <Box>
@@ -436,7 +436,7 @@ const SanMartin1 = () => {
               alt=""
             />
           </FadingImage3>
-          
+
           <FadingImage3
             sx={{
               opacity: currentImage === 3 ? 1 : 0,
@@ -452,6 +452,153 @@ const SanMartin1 = () => {
             />
           </FadingImage3>
         </Box>
+      </Hidden>
+
+      <Hidden smUp>
+        <NavMobile />
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            width={"100%"}
+            src="sanMartin1/sanMartin1-1.png"
+            alt="portada de San Martín"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "320px",
+            width: "80%",
+            left: "10%",
+            height: "158px",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}:{" "}
+              <strong>Municipalidad de San Martín</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Comunicación institucional</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2014 - 2022</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box>
+          <Box mt={"-4px"}>
+            <img
+              style={{ objectFit: "cover" }}
+              width={"100%"}
+              src="/sanMartin1/sanMartin1-2.png"
+              alt="libros de 8M"
+            />
+          </Box>
+
+          <Box mt={"-5px"}>
+            <img
+              style={{ objectFit: "cover" }}
+              width={"100%"}
+              src="/sanMartin1/sanMartin1-3.png"
+              alt="libros de 8M"
+            />
+          </Box>
+        </Box>
+
+        <Box p={8} width={"100%"} m={"auto"}>
+          <img
+            style={{ objectFit: "cover" }}
+            width={"100%"}
+            src="sanMartin1/sanMartin1-4.png"
+            alt="afiche de club en San Martín"
+          />
+        </Box>
+
+        {/* Aquí empieza el carrusel de imágenes */}
+
+        <img
+          width={"100%"}
+          style={{ objectFit: "cover" }}
+          src="sanMartin1/sanMartin1-5.png"
+          alt=""
+        />
+        <Box mt={-1}>
+          <img
+            width={"100%"}
+            style={{ objectFit: "cover" }}
+            src="sanMartin1/sanMartin1-6.png"
+            alt=""
+          />
+        </Box>
+
+        <Box mt={-1}>
+          <img
+            width={"100%"}
+            style={{ objectFit: "cover" }}
+            src="sanMartin1/sanMartin1-7.png"
+            alt=""
+          />
+        </Box>
+
+        {/* Aquí empieza el carrusel de imágenes */}
+
+        <Box mt={-1}>
+          <img
+            width={"100%"}
+            style={{ objectFit: "cover" }}
+            src="sanMartin1/sanMartin1-13.png"
+            alt=""
+          />
+        </Box>
+        <Box mt={-1}>
+          <img
+            width={"100%"}
+            style={{ objectFit: "cover" }}
+            src="sanMartin1/sanMartin1-19.png"
+            alt=""
+          />
+        </Box>
+
+        {/* Aquí empieza el carrusel de imágenes */}
       </Hidden>
     </>
   );

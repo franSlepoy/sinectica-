@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavBar from "../NavBar/NavBar";
 import NavBar1 from "../NavBar/NavBar1";
+import NavMobile from "../NavBar/NavMobile";
 
 const FadingImage = styled(Box)`
   /* transition: opacity 0.5s ease-in-out; */
@@ -23,8 +24,8 @@ const Honda = () => {
 
   return (
     <>
-      <Hidden only={"lg"}>
-        <NavBar/>
+      <Hidden only={"lg"} smDown>
+        <NavBar />
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -56,7 +57,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-             {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
             </Typography>
           </Box>
           <Box width={"400px"}>
@@ -69,7 +70,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-             {t("proyecto")}: <strong>Anuario institucional</strong>
+              {t("proyecto")}: <strong>Anuario institucional</strong>
             </Typography>
           </Box>
           <Box>
@@ -82,7 +83,7 @@ const Honda = () => {
                 color: "#FFFFFF",
               }}
             >
-             {t("fecha")}: <strong>2018</strong>
+              {t("fecha")}: <strong>2018</strong>
             </Typography>
           </Box>
         </Box>
@@ -97,7 +98,7 @@ const Honda = () => {
           />
         </Box>
 
-        <Box textAlign={"center"} mt={20} height={"1550px"}  >
+        <Box textAlign={"center"} mt={20} height={"1550px"}>
           <img
             style={{ objectFit: "cover" }}
             height={"1350px"}
@@ -201,8 +202,8 @@ const Honda = () => {
         </Box>
       </Hidden>
 
-      <Hidden only={"xl"}>
-        <NavBar1/>
+      <Hidden only={"xl"} smDown>
+        <NavBar1 />
         <Box>
           <img
             style={{ objectFit: "cover" }}
@@ -221,7 +222,6 @@ const Honda = () => {
             width: "90%",
             left: "5%",
             height: "118px",
-           
           }}
         >
           <Box>
@@ -270,8 +270,6 @@ const Honda = () => {
             </Typography>
           </Box>
         </Box>
-
-       
 
         <Box mt={"-4px"}>
           <img
@@ -384,6 +382,159 @@ const Honda = () => {
               alt=""
             />
           </FadingImage>
+        </Box>
+      </Hidden>
+
+      <Hidden only={"sm"}>
+        <NavMobile />
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            width={"100%"}
+            src="honda/honda.png"
+            alt="portada de PSA"
+          />
+        </Box>
+
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "320px",
+            width: "80%",
+            left: "10%",
+            height: "118px",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Anuario institucional</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2018</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+        <Box bgcolor={"#E9E8E3"}>
+          {/* Aquí empieza el carrusel de imágenes */}
+          <FadingImage
+            sx={{
+              position: "absolute",
+              top: "508px",
+              width: "100%",
+              opacity: currentImage === 0 ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"235px"}
+              src="honda/honda4.png"
+              alt=""
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              position: "absolute",
+              top: "508px",
+              width: "100%",
+              opacity: currentImage === 1 ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"235px"}
+              src="honda/honda5.png"
+              alt=""
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              position: "absolute",
+              top: "508px",
+              width: "100%",
+              opacity: currentImage === 2 ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"235px"}
+              src="honda/honda6.png"
+              alt=""
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              position: "absolute",
+              top: "508px",
+              width: "100%",
+              opacity: currentImage === 3 ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"235px"}
+              src="honda/honda7.png"
+              alt=""
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              position: "absolute",
+              top: "508px",
+              width: "90%",
+              opacity: currentImage === 4 ? 1 : 0,
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"235px"}
+              src="honda/honda2.png"
+              alt=""
+            />
+          </FadingImage>
+        </Box>
+
+        <Box sx={{ position: "absolute", top: "758px", width: "100%" }}>
+          <img width={"100%"} src="honda/hondaMobile.png" alt="" />
         </Box>
       </Hidden>
     </>

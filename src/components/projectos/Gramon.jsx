@@ -3,6 +3,7 @@ import NavBar1 from "../NavBar/NavBar1";
 import { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import { useTranslation } from "react-i18next";
+import NavMobileAzul from "../NavBar/NavMobileAzul";
 
 const FadingImage = styled(Box)`
   position: absolute;
@@ -23,7 +24,7 @@ const Gramon = () => {
   }, []);
   return (
     <>
-      <Hidden lgDown>
+      <Hidden smDown >
         <NavBar1 />
         <Box>
           <img
@@ -140,6 +141,127 @@ const Gramon = () => {
         </Box>
         <Box position={"absolute"}  sx={{
               top: "1800px",
+              left: "50%",
+              transform: "translateX(-50%)",
+           
+            }}>
+        <img width={"100%"}    style={{ objectFit: "cover" }}  src="/gramon/gramon8.png" alt="" />
+        </Box>
+        <Box m={-1}>
+          <img width={"100%"}    style={{ objectFit: "cover" }}  src="/gramon/gramon4.png" alt="" />
+        </Box>
+
+      </Hidden>
+
+      <Hidden smUp >
+        <NavMobileAzul />
+        <Box>
+          <img
+            style={{ objectFit: "cover" }}
+            height={"497px"}
+            width={"100%"}
+            src="/gramon/gramon1.png"
+            alt=""
+          />
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            position: "absolute",
+            top: "320px",
+            width: "80%",
+            left: "10%",
+            height: "138px",
+           
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "100",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 2,
+              }}
+            >
+              {t("clienteProyectos")}: <strong>Laboratorio Gramon</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "bold",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#52BAFF",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: <strong>Diseño de identidad Megacistin</strong>
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "#61FB65",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("fecha")}: <strong>2010</strong>
+            </Typography>
+          </Box>
+        </Box>
+
+     
+
+        
+        <Box mt={-1}>
+          <img
+          style={{ objectFit: "cover" }}
+            width={"100%"}
+            height={"444px"}
+            src="/gramon/gramon3.png"
+            alt=""
+          />
+        </Box>
+
+        <Box>
+          <FadingImage
+            sx={{
+              top: "1300px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              opacity: showSecondImage ? 0 : 1,
+            }}
+          >
+            <img width={"200px"} src="/gramon/Gramon5.png" alt="PSA revista" />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              top: "1300px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              opacity: showSecondImage ? 1 : 0,
+            }}
+          >
+            <img width={"200px"} src="/gramon/gramon6.png" alt="PSA revista" />
+          </FadingImage>
+        </Box>
+        <Box mt={-3}>
+        <img width={"100%"}     style={{ objectFit: "cover" }}  src="/gramon/gramon7.png" alt="" />
+        </Box>
+        <Box position={"absolute"}  sx={{
+              top: "1490px",
               left: "50%",
               transform: "translateX(-50%)",
            
