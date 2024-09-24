@@ -555,29 +555,7 @@ const SanMartin1 = () => {
 
         {/* Aquí empieza el carrusel de imágenes */}
 
-        <img
-          width={"100%"}
-          style={{ objectFit: "cover" }}
-          src="sanMartin1/sanMartin1-5.png"
-          alt=""
-        />
-        <Box mt={-1}>
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            src="sanMartin1/sanMartin1-6.png"
-            alt=""
-          />
-        </Box>
-
-        <Box mt={-1}>
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            src="sanMartin1/sanMartin1-7.png"
-            alt=""
-          />
-        </Box>
+        
 
         {/* Aquí empieza el carrusel de imágenes */}
 
@@ -598,7 +576,7 @@ const SanMartin1 = () => {
           />
         </Box>
 
-        {/* Aquí empieza el carrusel de imágenes */}
+       
       </Hidden>
     </>
   );

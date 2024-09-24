@@ -185,9 +185,9 @@ export default function Proyectos() {
     <>
     <Hidden smDown>
     <NavBar1 />
-      <Box m={"auto"} mt={5} width={"80%"} p={4}>
+      <Box m={"auto"} mt={0} width={"80%"} p={4}>
         <Box
-          sx={{ width: "40%", m: "auto" }}
+          sx={{ width: "30%", m: "auto" }}
           display="flex"
           justifyContent="center"
         >
@@ -254,10 +254,10 @@ export default function Proyectos() {
           ))}
         </Box>
       </Box>
-      <Box position={"absolute"} top={"50%"} left={"5%"}>
+      <Box position={"absolute"} top={"50%"} left={"6%"}>
         <img height={"130px"} style={{objectFit:"cover"}} src="/proyectos/diseno2.png" alt="" />
       </Box>
-      <Box position={"absolute"} top={"50%"} right={"5%"}>
+      <Box position={"absolute"} top={"50%"} right={"6%"}>
         <img height={"130px"} style={{objectFit:"cover"}} src="/proyectos/diseno1.png" alt="" />
       </Box>
     </Hidden>

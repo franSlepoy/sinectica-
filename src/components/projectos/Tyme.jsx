@@ -298,14 +298,14 @@ const Tyme = () => {
         </Box>
         <Box
           position={"absolute"}
-          top={"1859px"}
+          top={"1849px"}
           sx={{ left: "28%", transform: "translateX(-50%)", zIndex: 11 }}
         >
           <video
             muted
             autoPlay
             loop
-            style={{ objectFit: "cover", borderRadius: "48px" }}
+            style={{ objectFit: "cover", borderRadius: "58px" }}
             src="tyme/tymeMobile.mov"
           />
         </Box>

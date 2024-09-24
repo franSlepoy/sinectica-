@@ -895,17 +895,7 @@ const PSA = () => {
           </FadingImage2>
         </Box>
 
-        <Box
-          position={"absolute"}
-          top={"4940px"}
-          sx={{
-            position: "absolute",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <img src="/psa/psa18.png" alt="Citroen Lounge, auto centrado" />
-        </Box>
+        
 
         <Box>
           <Box
@@ -1238,33 +1228,74 @@ const PSA = () => {
           />
         </ScrollableImageContainer>
 
-        <Box display={"flex"} justifyContent={"center"}>
+       
+
+        <Box m={"auto"} width={"80%"} height={"900px"} pb={10}>
           <FadingImage
             sx={{
-              top: "500px",
+              top: "768px",
+              left: "51.4%",
+              transform: "translateX(-50%)",
+              width: "85%",
+              pb: 2,
 
-              opacity: showSecondImage ? 0 : 1,
+              opacity: currentImage === 0 ? 1 : 0,
             }}
           >
             <img
-              width={"100%"}
-              height={"543px"}
-              src="/psa/psa4.png"
-              alt="PSA revista"
+                width={"100%"}
+                height={"543px"}
+                src="/psa/psa3.png"
+                alt="PSA revista"
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "500px",
-
-              opacity: showSecondImage ? 1 : 0,
+              top: "768px",
+              left: "51.4%",
+              transform: "translateX(-50%)",
+              width: "85%",
+              opacity: currentImage === 1 ? 1 : 0,
             }}
           >
             <img
-              width={"100%"}
-              height={"543px"}
-              src="/psa/psa3.png"
-              alt="PSA revista"
+                width={"100%"}
+                height={"543px"}
+                src="/psa/psa4.png"
+                alt="PSA revista"
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              top: "768px",
+              left: "51.4%",
+              transform: "translateX(-50%)",
+              width: "85%",
+              opacity: currentImage === 2 ? 1 : 0,
+            }}
+          >
+            <img
+                 width={"100%"}
+                 height={"543px"}
+                 src="/psa/psa3.png"
+                 alt="PSA revista"
+            />
+          </FadingImage>
+          <FadingImage
+            sx={{
+              top: "768px",
+              left: "51.4%",
+              transform: "translateX(-50%)",
+              width: "85%",
+
+              opacity: currentImage === 3 ? 1 : 0,
+            }}
+          >
+            <img
+                 width={"100%"}
+                 height={"543px"}
+                 src="/psa/psa4.png"
+                 alt="PSA revista"
             />
           </FadingImage>
         </Box>
@@ -1272,17 +1303,17 @@ const PSA = () => {
         <Box bgcolor={"#D7D6D5"}>
           <FadingImage
             sx={{
-              top: "1050px",
+              top: "1300px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
             }}
           >
-            <img height={"279px"} src="/psa/psa10.png" alt="PSA revista" />
+            <img  height={"279px"} src="/psa/psa10.png" alt="PSA revista" />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1050px",
+              top: "1300px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
@@ -1294,7 +1325,7 @@ const PSA = () => {
 
         <Box
           position={"absolute"}
-          top={"1350px"}
+          top={"1600px"}
           sx={{ left: "50%", transform: "translateX(-50%)" }}
         >
           <img
@@ -1311,7 +1342,7 @@ const PSA = () => {
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "1556px",
+                top: "1806px",
                 width: "100%",
                 /*   left: '75%',
           transform: 'translateX(-50%)', */
@@ -1329,7 +1360,7 @@ const PSA = () => {
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "1556px",
+                top: "1806px",
                 opacity: showSecondImage ? 1 : 0,
                 width: "100%",
               }}
@@ -1349,7 +1380,7 @@ const PSA = () => {
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 0 : 1,
-              top: "1000px",
+              top: "2200px",
               left: 0,
               right: 0,
             }}
@@ -1365,7 +1396,7 @@ const PSA = () => {
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 1 : 0,
-              top: "0",
+              top: "2000px",
               left: 0,
               right: 0,
             }}
@@ -1380,11 +1411,11 @@ const PSA = () => {
           </FadingImage2>
         </Box>
 
-        <Box  height="482px">
+        <Box height="482px">
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 0 : 1,
-              top: "2200px",
+              top: "2450px",
               left: 0,
               right: 0,
             }}
@@ -1400,7 +1431,7 @@ const PSA = () => {
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 1 : 0,
-              top: "2200px",
+              top: "2450px",
               left: 0,
               right: 0,
             }}
@@ -1417,21 +1448,23 @@ const PSA = () => {
 
         <Box
           position={"absolute"}
-          top={"2240px"}
+          top={"2480px"}
           sx={{
             position: "absolute",
             left: "50%",
             transform: "translateX(-50%)",
           }}
         >
-          <img width={"180px"} src="/psa/psa18.png" alt="Citroen Lounge, auto centrado" />
+          <img
+            width={"180px"}
+            src="/psa/psa18.png"
+            alt="Citroen Lounge, auto centrado"
+          />
         </Box>
 
-        <Box position={"absolute"} p={3} top={"2400px"}>
+        <Box position={"absolute"} ml={"2%"} p={"8%"} top={"2658px"}>
           <img width={"100%"} src="/psa/psa19.png" alt="" />
         </Box>
-
-     
       </Hidden>
     </>
   );

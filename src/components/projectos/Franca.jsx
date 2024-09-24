@@ -130,7 +130,7 @@ const Franca = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -138,37 +138,37 @@ const Franca = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Franca</strong>
+              {t("clienteProyectos")}: Franca
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+              {t("proyecto")}: Diseño y programación e-commerce
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>E-Commerce</strong>
+              {t("fecha")}: 2024
             </Typography>
           </Box>
         </Box>
@@ -211,7 +211,7 @@ const Franca = () => {
 
         <Box
           position={"absolute"}
-          top={"1792px"}
+          top={"1752px"}
           sx={{ left: "50%", transform: "translateX(-50%)" }}
         >
           <img

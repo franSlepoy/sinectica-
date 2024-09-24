@@ -70,6 +70,7 @@ const NavBar = () => {
                 height: "30px",
                 fontWeight: "normal",
                 color: "white",
+                
               }}
             >
               Hacemos

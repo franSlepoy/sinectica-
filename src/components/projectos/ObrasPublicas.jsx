@@ -118,7 +118,7 @@ const ObrasPublicas = () => {
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"1390px"}
+            height={"1590px"}
             src="/obrasPublicas/obras14.png"
             alt=""
           />
@@ -127,13 +127,13 @@ const ObrasPublicas = () => {
         <Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1600px", left: "26.5%", transform: "translateX(-29%)" }}
+            sx={{ top: "1700px", left: "26.5%", transform: "translateX(-29%)" }}
           >
             <img height={"632px"} src="/obrasPublicas/obras7.png" alt="libro" />
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1600px", left: "64%", transform: "translateX(-29%)" }}
+            sx={{ top: "1700px", left: "64%", transform: "translateX(-29%)" }}
           >
             <img
               height={"282px"}
@@ -143,7 +143,7 @@ const ObrasPublicas = () => {
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1900px", left: "64%", transform: "translateX(-29%)" }}
+            sx={{ top: "1985px", left: "64%", transform: "translateX(-29%)" }}
           >
             <img
               height={"282px"}
@@ -153,7 +153,7 @@ const ObrasPublicas = () => {
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "2250px", left: "50%", transform: "translateX(-50%)" }}
+            sx={{ top: "2380px", left: "50%", transform: "translateX(-50%)" }}
           >
             <img width={"1000px"} src="/obrasPublicas/obras8.png" alt="libro" />
           </Box>
@@ -213,18 +213,13 @@ const ObrasPublicas = () => {
         <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"497px"}
+            height={"509px"}
             width={"100%"}
             src="/obrasPublicas/obras1.png"
             alt="imágen autopistas"
           />
         </Box>
-        <Box
-          sx={{ cursor: "pointer" }}
-          position={"absolute"}
-          top={"280px"}
-          left={"35%"}
-        ></Box>
+       
 
         <Box
           sx={{
@@ -286,66 +281,64 @@ const ObrasPublicas = () => {
             </Typography>
           </Box>
         </Box>
-        <Box mt={"-4px"}>
+        <Box mt={"-8px"}>
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"353px"}
+            height={"263px"}
             src="/obrasPublicas/obras2.png"
             alt=""
           />
         </Box>
 
-        <Box mt={"-4px"}>
+        <Box mt={"-8px"}>
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"415px"}
+            height={"305px"}
             src="/obrasPublicas/obras14.png"
             alt=""
           />
         </Box>
-        
-        <Box width={"80%"}>
+
+        <Box  >
           <FadingImage
             sx={{
-              top: "898px",
-              
+              top: "818px",
+              width: "80%",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
             }}
           >
             <img
-              width={"280px"}
-              height={"325px"}
+              width={"100%"}
               src="/obrasPublicas/obras11.png"
               alt="PSA revista"
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "898px",
-           
+              top: "818px",
+              width: "80%",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
             }}
           >
             <img
-              width={"280px"}
-              height={"325px"}
+              width={"100%"}
               src="/obrasPublicas/obras10.png"
               alt="PSA revista"
             />
           </FadingImage>
         </Box>
 
-        <Box>
+        <Box mt={-5}  height={"300px"} width={"100%"} bgcolor={"#f6f8fa"}>
           <FadingImage
             sx={{
-              top: "1244px",
-              width: "100%",
+              top: "1114px",
+              width: "88%",
               left: "50.5%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
@@ -353,15 +346,15 @@ const ObrasPublicas = () => {
           >
             <img
               width={"100%"}
-              height={"325px"}
+              
               src="/obrasPublicas/obras16.png"
               alt="PSA revista"
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1244px",
-              width: "100%",
+              top: "1114px",
+              width: "88%",
               left: "50.5%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
@@ -369,16 +362,16 @@ const ObrasPublicas = () => {
           >
             <img
               width={"100%"}
-              height={"325px"}
+              
               src="/obrasPublicas/obras15.png"
               alt="PSA revista"
             />
           </FadingImage>
         </Box>
 
-        <Box position={"absolute"} top={"1562px"}>
+        <Box position={"absolute"} top={"1402px"}>
           <img
-            height={"287px"}
+            height={"197px"}
             width={"100%"}
             src="/obrasPublicas/obras4.png"
             alt=""
@@ -386,11 +379,11 @@ const ObrasPublicas = () => {
         </Box>
         <Box
           position={"absolute"}
-          top={"1882px"}
-          sx={{ pb: 4, left: "50.5%", transform: "translateX(-50%)" }}
+          top={"1642px"}
+          sx={{ pb: 4, width:"70%", left: "50.5%", transform: "translateX(-50%)" }}
         >
           <img
-            height={"262px"}
+            
             width={"100%"}
             src="/obrasPublicas/obras7.png"
             alt=""

@@ -37,13 +37,11 @@ const ScrollableImageContainer = styled(Box)`
 
 const FadingImage = styled(Box)`
   position: absolute;
-  
- 
+
   /* top: 1808px;
   left: 258px; */
   transition: opacity 0.3s ease-in-out;
 `;
-
 
 const honda1 = () => {
   const { t, i18n } = useTranslation();
@@ -134,15 +132,15 @@ const honda1 = () => {
         <ScrollableImageContainer
           sx={{
             position: "absolute",
-            left: "49.8%",
-            top: "882px",
+            left: "50.2%",
+            top: "936px",
             transform: "translateX(-50%)",
-            width: "834px",
-            height: "502px",
+            width: "816px",
+            height: "512px",
           }}
         >
           <img
-            width={"824px"}
+            width={"808px"}
             style={{ objectFit: "cover" }}
             src="/honda1/honda1-3.png"
             alt=""
@@ -186,7 +184,7 @@ const honda1 = () => {
           left={"70%"} // Ajusta la posición según sea necesario
           sx={{ cursor: "pointer" }}
         >
-          <img src="/honda1/honda1-10.png" alt="honda" />
+          <img width={"80%"} src="/honda1/honda1-10.png" alt="honda" />
         </Box>
         <>
           <Box position={"absolute"} top={"3500px"} left={"20%"}>
@@ -337,73 +335,8 @@ const honda1 = () => {
           />
         </ScrollableImageContainer>
 
-        <Box>
-          <FadingImage
-            sx={{
-              top: "778px",
-
-              width: "100%",
-
-              opacity: currentImage === 0 ? 1 : 0,
-            }}
-          >
-            <img
-              height={"500px"}
-              width={"100%"}
-              src="/honda1/honda1-4.png"
-              alt=""
-            />
-          </FadingImage>
-          <FadingImage
-            sx={{
-              top: "778px",
-
-              width: "100%",
-
-              opacity: currentImage === 1 ? 1 : 0,
-            }}
-          >
-            <img
-              height={"500px"}
-              width={"100%"}
-              src="/honda1/honda1-5.png"
-              alt=""
-            />
-          </FadingImage>
-          <FadingImage
-            sx={{
-              top: "778px",
-
-              width: "100%",
-
-              opacity: currentImage === 2 ? 1 : 0,
-            }}
-          >
-            <img
-              height={"500px"}
-              width={"100%"}
-              src="/honda1/honda1-6.png"
-              alt=""
-            />
-          </FadingImage>
-          <FadingImage
-            sx={{
-              top: "778px",
-
-              width: "100%",
-
-              opacity: currentImage === 3 ? 1 : 0,
-            }}
-          >
-            <img
-              width={"100%"}
-              height={"500px"}
-              src="/honda1/honda1-8.png"
-              alt=""
-            />
-          </FadingImage>
-        </Box>
-        <Box position={"absolute"} top={"1278px"}>
+       
+        <Box position={"absolute"} top={"1168px"}>
           <img
             width={"100%"}
             height={"400px"}
@@ -414,7 +347,7 @@ const honda1 = () => {
         </Box>
         <Box
           position={"absolute"}
-          top={"1528px"}
+          top={"1428px"}
           sx={{ left: "50.2%", transform: "translateX(-50%)" }}
         >
           <img
@@ -426,11 +359,12 @@ const honda1 = () => {
           />
         </Box>
 
-        <Box width={"80%"} height={"900px"} pb={10}>
+        <Box m={"auto"} width={"80%"} height={"900px"} pb={10}>
           <FadingImage
             sx={{
-              top: "1708px",
-              left: "10%",
+              top: "1608px",
+              left: "56%",
+              transform: "translateX(-50%)",
               width: "80%",
               pb: 2,
 
@@ -438,74 +372,78 @@ const honda1 = () => {
             }}
           >
             <img
-              height={"400px"}
-              width={"100%"}
+              height={"380px"}
+              width={"86%"}
               src="/honda1/honda1-11.png"
               alt=""
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1708px",
-              left: "10%",
+              top: "1608px",
+              left: "56%",
+              transform: "translateX(-50%)",
               width: "80%",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
             <img
-              height={"400px"}
-              width={"100%"}
+              height={"380px"}
+              width={"86%"}
               src="/honda1/honda1-12.png"
               alt=""
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1708px",
-              left: "10%",
+              top: "1608px",
+              left: "56%",
+              transform: "translateX(-50%)",
               width: "80%",
-
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
             <img
-              height={"400px"}
-              width={"100%"}
+              height={"380px"}
+              width={"86%"}
               src="/honda1/honda1-13.png"
               alt=""
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1708px",
-              left: "10%",
+              top: "1608px",
+              left: "56%",
+              transform: "translateX(-50%)",
               width: "80%",
 
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
             <img
-              width={"100%"}
-              height={"400px"}
+              width={"86%"}
+              height={"380px"}
               src="/honda1/honda1-14.png"
               alt=""
             />
           </FadingImage>
         </Box>
 
-        <Box>
+        <Box m={"auto"} width={"80%"} height={"900px"} >
           <FadingImage
             sx={{
               top: "778px",
-
-              width: "100%",
+              left: "56%",
+              transform: "translateX(-50%)",
+              width: "80%",
+              pb: 2,
 
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
             <img
-              height={"500px"}
-              width={"100%"}
+              height={"340px"}
+              width={"86%"}
               src="/honda1/honda1-4.png"
               alt=""
             />
@@ -513,15 +451,15 @@ const honda1 = () => {
           <FadingImage
             sx={{
               top: "778px",
-
-              width: "100%",
-
+              left: "56%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
             <img
-              height={"500px"}
-              width={"100%"}
+              height={"340px"}
+              width={"86%"}
               src="/honda1/honda1-5.png"
               alt=""
             />
@@ -529,15 +467,15 @@ const honda1 = () => {
           <FadingImage
             sx={{
               top: "778px",
-
-              width: "100%",
-
+              left: "56%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
             <img
-              height={"500px"}
-              width={"100%"}
+              height={"340px"}
+              width={"86%"}
               src="/honda1/honda1-6.png"
               alt=""
             />
@@ -545,33 +483,26 @@ const honda1 = () => {
           <FadingImage
             sx={{
               top: "778px",
-
-              width: "100%",
+              left: "56%",
+              transform: "translateX(-50%)",
+              width: "80%",
 
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
             <img
-              width={"100%"}
-              height={"500px"}
+              width={"86%"}
+              height={"340px"}
               src="/honda1/honda1-8.png"
               alt=""
             />
           </FadingImage>
         </Box>
-        <Box position={"absolute"} top={"1278px"}>
-          <img
-            width={"100%"}
-            height={"400px"}
-            style={{ objectFit: "cover" }}
-            src="/honda1/honda1-9.png"
-            alt=""
-          />
-        </Box>
+      
         <Box
           position={"absolute"}
-          top={"1528px"}
-          sx={{  left: "50.2%", transform: "translateX(-50%)" }}
+          top={"1428px"}
+          sx={{ left: "50.2%", transform: "translateX(-50%)" }}
         >
           <img
             width={"100%"}
@@ -582,14 +513,13 @@ const honda1 = () => {
           />
         </Box>
 
-        <Box  width={"80%"} height={"900px"} pb={10} >
+       {/*  <Box width={"80%"} height={"900px"} pb={10}>
           <FadingImage
             sx={{
-              top: "2128px",
-              left:"12%",
+              top: "2028px",
+              left: "12%",
               width: "80%",
-              pb:2,
-              
+              pb: 2,
 
               opacity: currentImage === 0 ? 1 : 0,
             }}
@@ -603,8 +533,8 @@ const honda1 = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "2128px",
-              left:"12%",
+              top: "2028px",
+              left: "12%",
               width: "80%",
               opacity: currentImage === 1 ? 1 : 0,
             }}
@@ -618,8 +548,8 @@ const honda1 = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "2128px",
-              left:"12%",
+              top: "2028px",
+              left: "12%",
               width: "80%",
 
               opacity: currentImage === 2 ? 1 : 0,
@@ -632,8 +562,7 @@ const honda1 = () => {
               alt=""
             />
           </FadingImage>
-          
-        </Box>
+        </Box> */}
       </Hidden>
     </>
   );

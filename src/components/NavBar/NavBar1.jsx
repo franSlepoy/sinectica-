@@ -688,7 +688,7 @@ const NavBar1 = () => {
             mt={1}
           >
             <img
-              height={"30px"}
+              height={"25px"}
               style={{ objectFit: "cover" }}
               src="/navBar/sNav.png"
               alt="navBar"
@@ -705,7 +705,7 @@ const NavBar1 = () => {
                 fontSize: "18px",
                 color: "white",
                 mt: "5px",
-                ml: -1,
+                ml: -2,
               }}
             >
               Hacemos

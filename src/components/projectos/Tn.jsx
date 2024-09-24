@@ -83,7 +83,7 @@ const Tn = () => {
           <img
             style={{ backgroundColor: "#062257", objectFit: "cover" }}
             width={"100%"}
-            height={"1582px"}
+          
             src="/tn/tn3.png"
             alt=""
           />
@@ -91,7 +91,7 @@ const Tn = () => {
         <Box>
           <img
             style={{ objectFit: "cover" }}
-            height={"701px"}
+        
             width={"100%"}
             src="/tn/tn4.png"
             alt=""
@@ -101,7 +101,7 @@ const Tn = () => {
           <Box>
             <img
               style={{ objectFit: "cover" }}
-              height={"734px"}
+              
               width={"100%"}
               src="/tn/tn5.png"
               alt=""
@@ -187,12 +187,12 @@ const Tn = () => {
           </Box>
         </Box>
 
-        <Box mt={-1}>
+        <Box mt={-1} bgcolor={"#062257"}>
           <img
             
             width={"100%"}
            
-            src="/tn/tn3.png"
+            src="/tn/tnMobile1.png"
             alt=""
           />
         </Box>
@@ -201,7 +201,7 @@ const Tn = () => {
            
            
             width={"100%"}
-            src="/tn/tn4.png"
+            src="/tn/tnMobile2.png"
             alt=""
           />
         </Box>
@@ -210,7 +210,7 @@ const Tn = () => {
             <img
              
               width={"100%"}
-              src="/tn/tn5.png"
+              src="/tn/tnMobile3.png"
               alt=""
             />
           </Box>

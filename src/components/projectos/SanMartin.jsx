@@ -324,7 +324,7 @@ const SanMartin = () => {
         <Box mt={"-4px"}>
           <img
             style={{ objectFit: "cover" }}
-            height={"436px"}
+            height={"458px"}
             width={"100%"}
             src="/sanMartin/juntasMobile.png"
             alt="libros de 8M"
@@ -382,7 +382,7 @@ const SanMartin = () => {
               key={index}
               sx={{
                 textAlign: "center",
-
+                width:"100%",
                 bgcolor: imageSets[imageIndices[index]][index].bgColor,
               }}
             >
