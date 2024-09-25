@@ -26,7 +26,7 @@ const ObrasPublicas = () => {
 
   return (
     <>
-      <Hidden smDown>
+      <Hidden mdDown>
         <NavBar1 />
         <Box>
           <img
@@ -58,7 +58,7 @@ const ObrasPublicas = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -67,40 +67,40 @@ const ObrasPublicas = () => {
               }}
             >
               {t("clienteProyectos")}:{" "}
-              <strong>Ministerio de Obras Públicas</strong>
+              Ministerio de Obras Públicas
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
               {t("proyecto")}:{" "}
-              <strong>
+             
                 Plan de Obras públicas para el Desarrollo de la Nación
-              </strong>
+             
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2010 - 2020</strong>
+              {t("fecha")}: 2010 - 2020
             </Typography>
           </Box>
         </Box>
@@ -110,7 +110,7 @@ const ObrasPublicas = () => {
             style={{ objectFit: "cover" }}
             height={"782px"}
             src="/obrasPublicas/obras2.png"
-            alt=""
+            alt="Libro"
           />
         </Box>
 
@@ -118,44 +118,44 @@ const ObrasPublicas = () => {
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"1590px"}
+            height={"1550px"}
             src="/obrasPublicas/obras14.png"
-            alt=""
+            alt="foto de fondo, tierra"
           />
         </Box>
 
         <Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1700px", left: "26.5%", transform: "translateX(-29%)" }}
+            sx={{ top: "1700px", left: "25%", transform: "translateX(-29%)" }}
           >
-            <img height={"632px"} src="/obrasPublicas/obras7.png" alt="libro" />
+            <img height={"621px"} src="/obrasPublicas/obras7.png" alt="libro" />
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1700px", left: "64%", transform: "translateX(-29%)" }}
+            sx={{ top: "1680px", left: "63%", transform: "translateX(-29%)" }}
           >
             <img
-              height={"282px"}
+              height={"328px"}
               src="/obrasPublicas/obras10.png"
               alt="libro"
             />
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "1985px", left: "64%", transform: "translateX(-29%)" }}
+            sx={{ top: "2028px", left: "63%", transform: "translateX(-29%)" }}
           >
             <img
-              height={"282px"}
+              height={"328px"}
               src="/obrasPublicas/obras11.png"
               alt="libro"
             />
           </Box>
           <Box
             position={"absolute"}
-            sx={{ top: "2380px", left: "50%", transform: "translateX(-50%)" }}
+            sx={{width:"70%", top: "2380px", left: "50%", transform: "translateX(-50%)" }}
           >
-            <img width={"1000px"} src="/obrasPublicas/obras8.png" alt="libro" />
+            <img width={"100%"} height={"720px"}  style={{ objectFit: "cover" }} src="/obrasPublicas/obras8.png" alt="libro" />
           </Box>
         </Box>
 
@@ -208,7 +208,7 @@ const ObrasPublicas = () => {
         </Box>
       </Hidden>
 
-      <Hidden smUp>
+      <Hidden mdUp>
         <NavMobile />
         <Box>
           <img

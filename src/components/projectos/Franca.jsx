@@ -104,7 +104,7 @@ const Franca = () => {
 
   return (
     <>
-      <Hidden smDown>
+      <Hidden mdDown>
         <NavBar1 />
         <Box>
           <img
@@ -176,7 +176,7 @@ const Franca = () => {
         <Box mt={"-4px"}>
           <img
             style={{ objectFit: "cover" }}
-            height={"1840px"}
+            height={"1680px"}
             width={"100%"}
             src="franca/franca1.png"
             alt="fondo de con imágen de sillon"
@@ -211,7 +211,7 @@ const Franca = () => {
 
         <Box
           position={"absolute"}
-          top={"1752px"}
+          top={"1772px"}
           sx={{ left: "50%", transform: "translateX(-50%)" }}
         >
           <img
@@ -223,7 +223,7 @@ const Franca = () => {
         </Box>
         <Box
           position={"absolute"}
-          top={"1692px"}
+          top={"1722px"}
           sx={{ left: "50%", transform: "translateX(-50%)" }}
         >
           <img
@@ -237,7 +237,7 @@ const Franca = () => {
 
         <ScrollableImageContainer1
           style={{
-            top: "1910px",
+            top: "1930px",
 
             left: "50.1%",
             transform: "translateX(-50%)",
@@ -302,7 +302,7 @@ const Franca = () => {
           sx={{
             position: "absolute",
             left: "50%",
-            top: "3500px",
+            top: "3380px",
             transform: "translateX(-50%)",
           }}
         >
@@ -316,7 +316,7 @@ const Franca = () => {
         </Box>
       </Hidden>
 
-      <Hidden smUp>
+      <Hidden mdUp>
         <NavMobile />
         <Box>
           <img

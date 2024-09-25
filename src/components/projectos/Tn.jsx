@@ -35,15 +35,15 @@ const Tn = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "white",
+                color: "#202B61",
                 ml: 2,
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>TN Platex</strong>
+              {t("clienteProyectos")}: TN Platex
             </Typography>
           </Box>
 
@@ -51,10 +51,10 @@ const Tn = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
@@ -66,15 +66,15 @@ const Tn = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2023</strong>
+              {t("fecha")}: 2023
             </Typography>
           </Box>
         </Box>
@@ -83,7 +83,6 @@ const Tn = () => {
           <img
             style={{ backgroundColor: "#062257", objectFit: "cover" }}
             width={"100%"}
-          
             src="/tn/tn3.png"
             alt=""
           />
@@ -91,7 +90,6 @@ const Tn = () => {
         <Box>
           <img
             style={{ objectFit: "cover" }}
-        
             width={"100%"}
             src="/tn/tn4.png"
             alt=""
@@ -101,7 +99,6 @@ const Tn = () => {
           <Box>
             <img
               style={{ objectFit: "cover" }}
-              
               width={"100%"}
               src="/tn/tn5.png"
               alt=""
@@ -188,33 +185,15 @@ const Tn = () => {
         </Box>
 
         <Box mt={-1} bgcolor={"#062257"}>
-          <img
-            
-            width={"100%"}
-           
-            src="/tn/tnMobile1.png"
-            alt=""
-          />
+          <img width={"100%"} src="/tn/tnMobile1.png" alt="" />
         </Box>
         <Box>
-          <img
-           
-           
-            width={"100%"}
-            src="/tn/tnMobile2.png"
-            alt=""
-          />
+          <img width={"100%"} src="/tn/tnMobile2.png" alt="" />
         </Box>
         <Box>
           <Box>
-            <img
-             
-              width={"100%"}
-              src="/tn/tnMobile3.png"
-              alt=""
-            />
+            <img width={"100%"} src="/tn/tnMobile3.png" alt="" />
           </Box>
-          
         </Box>
       </Hidden>
     </>

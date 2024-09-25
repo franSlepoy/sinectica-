@@ -56,7 +56,7 @@ const NavBar1 = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsSticky(scrollTop > 800); // Cambia a true cuando el scroll es mayor a 800px
+      setIsSticky(scrollTop > 100); // Cambia a true cuando el scroll es mayor a 800px
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -717,7 +717,7 @@ const NavBar1 = () => {
       <Box
         position={"fixed"}
         top={40} // Posición fija desde el top de la ventana
-        right={"5%"} // Ajusta según sea necesario
+        right={"80px"} // Ajusta según sea necesario
         display={"flex"}
         flexDirection={"column"}
         alignItems={"end"}

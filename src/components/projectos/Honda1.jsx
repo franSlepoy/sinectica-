@@ -8,30 +8,25 @@ import NavMobile from "../NavBar/NavMobile";
 
 const ScrollableImageContainer = styled(Box)`
   position: absolute;
-  /* top: 1106px;
-  left: 18%; */
-  /* width: 65%;
-  height: 580px; */ // Adjust height as needed
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
-  // Custom scrollbar styles
   &::-webkit-scrollbar {
     width: 7px;
   }
 
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #dbd9d9;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #969393;
   }
 `;
 
@@ -81,7 +76,7 @@ const honda1 = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -89,32 +84,32 @@ const honda1 = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+              {t("clienteProyectos")}: Honda Argentina
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+              {t("proyecto")}: Programa de comunicación interna
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
@@ -123,10 +118,10 @@ const honda1 = () => {
             </Typography>
           </Box>
         </Box>
-        <Box width={"100%"} bgcolor={"white"}>
-          <Box width="80%" m={"auto"}>
+        {/*  <Box width={"100%"} bgcolor={"white"}>
+          <Box position={"absolute"} sx={{left: "50%", transform: "translateX(-50%)"}} width="80%" m={"auto"}>
             {" "}
-            <img width={"100%"} src="/honda1/honda1-2.png" alt="" />{" "}
+            <img width={"1130px"} style={{objectFit:"cover"}} src="/honda1/honda1-2.png" alt="" />{" "}
           </Box>
         </Box>
         <ScrollableImageContainer
@@ -141,70 +136,131 @@ const honda1 = () => {
         >
           <img
             width={"808px"}
+            height={"400px"}
             style={{ objectFit: "cover" }}
             src="/honda1/honda1-3.png"
             alt=""
           />
+        </ScrollableImageContainer> */}
+        <Box
+          position={"absolute"}
+          top={"942px"}
+          sx={{ left: "50%", transform: "translateX(-50%)" }}
+        >
+          <img
+            width={"777px"}
+            style={{ objectFit: "cover" }}
+            src="franca/compuMobile.png"
+            alt="computadora"
+          />
+        </Box>
+
+        <ScrollableImageContainer
+          style={{
+            top: "982px",
+            left: "50.2%",
+            transform: "translateX(-50%)",
+
+            width: "598px",
+            height: "382px",
+          }}
+        >
+          <img
+            width={"591px"}
+            style={{ objectFit: "cover" }}
+            src="honda1/honda1-3.png"
+            alt="imagen de home de pagina"
+          />
         </ScrollableImageContainer>
 
-        <Box mt={-1} pt={10} display={"flex"} bgcolor={"#F0F0F0"}>
-          <Box mt={20} ml={10}>
-            <img src="/honda1/honda1-4.png" alt="hondaSOy" />
-          </Box>
-          <Box mt={2} ml={8}>
-            <img src="/honda1/honda1-5.png" alt="honda" />
-          </Box>
-          <Box mt={10} ml={8}>
-            <img src="/honda1/honda1-6.png" alt="honda" />
+        <Box width={"100%"} bgcolor={"#F0F0F0"}>
+          <Box
+            position={"absolute"}
+            sx={{
+              top: "1500px",
+              width: "100%",
+            }}
+            display={"flex"}
+            justifyContent={"center"}
+            bgcolor={"#F0F0F0"}
+          >
+            <Box mt={20} ml={10}>
+              <img src="/honda1/honda1-4.png" alt="hondaSOy" />
+            </Box>
+            <Box mt={10} ml={8}>
+              <img src="/honda1/honda1-5.png" alt="honda" />
+            </Box>
+            <Box mt={20} ml={8}>
+              <img src="/honda1/honda1-6.png" alt="honda" />
+            </Box>
           </Box>
         </Box>
-        <Box display={"flex"} bgcolor={"#F0F0F0"} pb={4}>
+
+        <Box
+          position={"absolute"}
+          sx={{ top: "2200px" }}
+          display={"flex"}
+          justifyContent={"center"}
+          bgcolor={"#F0F0F0"}
+          width={"100%"}
+          pb={4}
+        >
           <Box mt={10} ml={20}>
-            <img src="/honda1/honda1-7.png" alt="honda" />
+            <img height={"600px"} src="/honda1/honda1-7.png" alt="honda" />
           </Box>
           <Box mt={10} ml={20}>
-            <img src="/honda1/honda1-8.png" alt="honda" />
+            <img height={"569px"} src="/honda1/honda1-8.png" alt="honda" />
           </Box>
         </Box>
-        <Box>
+        <Box width={"100%"} position={"absolute"} sx={{ top: "2910px" }}>
           <img
             style={{ objectFit: "cover" }}
             width={"100%"}
-            height={"800px"}
+            height={"1000px"}
             src="/honda1/honda1-9.png"
             alt="taller de honda"
           />
         </Box>
 
-        <Box mt={"-4px"} bgcolor={"#F0F0F0"} height={"700px"}></Box>
-
         <Box
           position={"absolute"}
-          top={"3080px"} // Ajusta la posición según sea necesario
-          left={"70%"} // Ajusta la posición según sea necesario
-          sx={{ cursor: "pointer" }}
+          top={"2990px"} // Ajusta la posición según sea necesario
+          left={"80%"} // Ajusta la posición según sea necesario
+          sx={{ cursor: "pointer", zIndex:20 }}
+
         >
           <img width={"80%"} src="/honda1/honda1-10.png" alt="honda" />
         </Box>
         <>
-          <Box position={"absolute"} top={"3500px"} left={"20%"}>
+          <Box zIndex={20} position={"absolute"} top={"3400px"} left={"20%"}>
             <img width={"80%"} src="/honda1/honda1-11.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"3550px"} left={"55%"}>
+          <Box zIndex={20} position={"absolute"} top={"3550px"} left={"55%"}>
             <img width={"80%"} src="/honda1/honda1-12.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"4100px"} left={"20%"}>
-            <img src="/honda1/honda1-13.png" alt="honda" />
+          <Box zIndex={20} position={"absolute"} top={"4080px"} left={"20%"}>
+            <img width={"340px"} src="/honda1/honda1-22.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"4180px"} left={"55%"}>
+          <Box zIndex={20} position={"absolute"} top={"4180px"} left={"55%"}>
             <img width={"80%"} src="/honda1/honda1-14.png" alt="honda" />
           </Box>
-          <Box position={"absolute"} top={"4180px"} left={"70%"}>
+          <Box zIndex={20} position={"absolute"} top={"4180px"} left={"70%"}>
             <img width={"80%"} src="/honda1/honda1-15.png" alt="honda" />
+          </Box>
+          <Box zIndex={20} position={"absolute"} top={"3880px"} left={"40%"}>
+            <img width={"300px"} src="/honda1/honda1-23.png" alt="honda" />
           </Box>
         </>
 
-        <Box m={5} display={"flex"} justifyContent={"space-evenly"}>
+        <Box bgcolor={"#F0F0F0"}  height={"730px"} width={"100%"} position={"Absolute"} top={"3910px"} zIndex={0}></Box>
+
+        <Box
+          width={"100%"}
+          position={"Absolute"}
+          top={"4700px"}
+          display={"flex"}
+          justifyContent={"space-evenly"}
+        >
           <Box>
             <img
               height={"525px"}
@@ -227,10 +283,11 @@ const honda1 = () => {
             />
           </Box>
         </Box>
-        <Box>
+        <Box position={"absolute"} width={"100%"} sx={{ top: "5280px" }}>
           <img
+           style={{objectFit:"cover"}}
             width={"100%"}
-            height={"800px"}
+           height={"750px"}
             src="/honda1/honda1-19.png"
             alt=""
           />
@@ -335,7 +392,6 @@ const honda1 = () => {
           />
         </ScrollableImageContainer>
 
-       
         <Box position={"absolute"} top={"1168px"}>
           <img
             width={"100%"}
@@ -429,7 +485,7 @@ const honda1 = () => {
           </FadingImage>
         </Box>
 
-        <Box m={"auto"} width={"80%"} height={"900px"} >
+        <Box m={"auto"} width={"80%"} height={"900px"}>
           <FadingImage
             sx={{
               top: "778px",
@@ -498,7 +554,7 @@ const honda1 = () => {
             />
           </FadingImage>
         </Box>
-      
+
         <Box
           position={"absolute"}
           top={"1428px"}
@@ -513,7 +569,7 @@ const honda1 = () => {
           />
         </Box>
 
-       {/*  <Box width={"80%"} height={"900px"} pb={10}>
+        {/*  <Box width={"80%"} height={"900px"} pb={10}>
           <FadingImage
             sx={{
               top: "2028px",

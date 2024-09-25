@@ -20,13 +20,14 @@ const FadingImage1 = styled(Box)`
 `;
 const FadingImage2 = styled(Box)`
   position: absolute;
-  top: 5250px;
+  top: 4800px;
+  
   /* 
   transition: opacity 0.3s ease-in-out; */
 `;
 const FadingImage3 = styled(Box)`
   position: absolute;
-  top: 6120px;
+  top: 5520px;
   /* 
   transition: opacity 0.3s ease-in-out; */
 `;
@@ -80,46 +81,46 @@ const SanMartin1 = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "white",
+                color:"white",
                 ml: 2,
                 mt: 2,
               }}
             >
               {t("clienteProyectos")}:{" "}
-              <strong>Municipalidad de San Martín</strong>
+              Municipalidad de San Martín
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+               sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("proyecto")}: Comunicación institucional
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Comunicación institucional</strong>
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#61FB65",
-                ml: 2,
-                mt: 1,
-              }}
-            >
-              {t("fecha")}: <strong>2014 - 2022</strong>
+              {t("fecha")}: 2014 - 2022
             </Typography>
           </Box>
         </Box>
@@ -157,7 +158,7 @@ const SanMartin1 = () => {
         </Box>
 
         <Box>
-          <Box position={"absolute"} ml={10} mt={10} zIndex={10}>
+          <Box position={"absolute"} left={"68px"} mt={10} zIndex={10}>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -191,7 +192,7 @@ const SanMartin1 = () => {
               width={"100%"}
               height={"870px"}
               style={{ objectFit: "cover" }}
-              src="sanMartin1/sanMartin1-5.png"
+              src="sanMartin1/sanMartin1-8.png"
               alt=""
             />
           </FadingImage>
@@ -223,24 +224,11 @@ const SanMartin1 = () => {
               alt=""
             />
           </FadingImage>
-          <FadingImage
-            sx={{
-              opacity: currentImage === 3 ? 1 : 0,
-              width: "100%",
-            }}
-          >
-            <img
-              width={"100%"}
-              height={"870px"}
-              style={{ objectFit: "cover" }}
-              src="sanMartin1/sanMartin1-8.png"
-              alt=""
-            />
-          </FadingImage>
+          
         </Box>
 
         <Box>
-          <Box position={"absolute"} top={"3680px"} left={"100px"} zIndex={10}>
+          <Box position={"absolute"} top={"3700px"} left={"68px"} zIndex={10}>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -272,7 +260,7 @@ const SanMartin1 = () => {
           >
             <img
               width={"100%"}
-              height={"870px"}
+              height={"1270px"}
               style={{ objectFit: "cover" }}
               src="sanMartin1/sanMartin1-9.png"
               alt=""
@@ -286,15 +274,15 @@ const SanMartin1 = () => {
           >
             <img
               width={"100%"}
-              height={"870px"}
+              height={"1270px"}
               style={{ objectFit: "cover" }}
               src="sanMartin1/sanMartin1-10.png"
               alt=""
             />
           </FadingImage1>
         </Box>
-
-        <Box mt={200} height={"965px"}>
+{/* 
+        <Box mt={200} >
           <img
             width={"100%"}
             height={"965px"}
@@ -302,10 +290,10 @@ const SanMartin1 = () => {
             src="sanMartin1/sanMartin1-13.png"
             alt="afiche Plaza de la mujer"
           />
-        </Box>
+        </Box> */}
 
         <Box>
-          <Box position={"absolute"} top={"5350px"} left={"100px"} zIndex={10}>
+          <Box position={"absolute"} top={"4860px"} left={"68px"} zIndex={10}>
             <Typography
               sx={{
                 fontFamily: "Inter",
@@ -379,7 +367,7 @@ const SanMartin1 = () => {
         </Box>
 
         <Box>
-          <Box position={"absolute"} top={"6200px"} left={"100px"} zIndex={10}>
+          <Box position={"absolute"} top={"5600px"} left={"68px"} zIndex={10}>
             <Typography
               sx={{
                 fontFamily: "Inter",

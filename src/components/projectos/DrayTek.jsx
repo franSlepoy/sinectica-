@@ -153,15 +153,15 @@ const DrayTek = () => {
         >
           <Box>
             <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "100",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "white",
-                ml: 2,
-                mt: 2,
-              }}
+            sx={{
+              fontFamily: "acumin-pro",
+              fontWeight: "400",
+              fontSize: "18px",
+              lineHeight: "21.78px",
+              color: "#202B61",
+              ml: 2,
+              mt: 2,
+            }}
             >
               {t("clienteProyectos")}: <strong>Draytek</strong>
             </Typography>
@@ -170,10 +170,10 @@ const DrayTek = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
@@ -185,10 +185,10 @@ const DrayTek = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}

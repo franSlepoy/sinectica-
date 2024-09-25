@@ -8,6 +8,8 @@ import NavMobile from "../NavBar/NavMobile";
 
 const FadingImage = styled(Box)`
   position: absolute;
+  
+
   /* top: 1808px;
   left: 258px; */
   transition: opacity 0.3s ease-in-out;
@@ -150,6 +152,12 @@ const SanMartin = () => {
             alt="libros de 8M"
           />
         </Box>
+
+        <Box position={"absolute"}  height={"500px"}  sx={{bgColor:"#E4E1D5",  top: "1888px",
+              left: "50%",
+              transform: "translateX(-50%)", zIndex:100}} >
+hola
+        </Box>
         <Box height={"856px"} mt={-2} mr={0}>
           <img
             style={{ objectFit: "cover" }}
@@ -159,9 +167,11 @@ const SanMartin = () => {
             alt="foto de evento de 8M en San Martín"
           />
           {/* Aquí empieza el carrusel de imágenes */}
+        
           <FadingImage
             sx={{
-              top: "1808px",
+             
+              top: "1888px",
               left: "50%",
               transform: "translateX(-50%)",
 
@@ -172,7 +182,7 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1808px",
+              top: "1888px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: currentImage === 1 ? 1 : 0,
@@ -182,7 +192,7 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1808px",
+              top: "1888px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: currentImage === 2 ? 1 : 0,
@@ -192,7 +202,7 @@ const SanMartin = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1808px",
+              top: "1888px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: currentImage === 3 ? 1 : 0,
