@@ -285,7 +285,9 @@ const Honda = () => {
             sx={{
               position: "absolute",
               top: "508px",
-              width: "100%",
+              left:"50%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
@@ -300,7 +302,9 @@ const Honda = () => {
             sx={{
               position: "absolute",
               top: "508px",
-              width: "100%",
+              left:"50%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
@@ -315,7 +319,9 @@ const Honda = () => {
             sx={{
               position: "absolute",
               top: "508px",
-              width: "100%",
+              left:"50%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
@@ -330,7 +336,9 @@ const Honda = () => {
             sx={{
               position: "absolute",
               top: "508px",
-              width: "100%",
+              left:"50%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
@@ -345,7 +353,9 @@ const Honda = () => {
             sx={{
               position: "absolute",
               top: "508px",
-              width: "90%",
+              left:"50%",
+              transform: "translateX(-50%)",
+              width: "80%",
               opacity: currentImage === 4 ? 1 : 0,
             }}
           >

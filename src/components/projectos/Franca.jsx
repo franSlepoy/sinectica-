@@ -480,6 +480,7 @@ const Franca = () => {
         >
           <Box
             m={"auto"}
+           
             width={"100%"}
             display={"flex"}
             flexWrap={"wrap"}
@@ -495,7 +496,8 @@ const Franca = () => {
                 }}
               >
                 <img
-                  width={"70%"}
+                  width={"100%"}
+                  height={"320px"}
                   src={imageSets[imageIndices[index]][index].src}
                   alt=""
                 />

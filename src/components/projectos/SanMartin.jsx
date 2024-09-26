@@ -8,7 +8,6 @@ import NavMobile from "../NavBar/NavMobile";
 
 const FadingImage = styled(Box)`
   position: absolute;
-  
 
   /* top: 1808px;
   left: 258px; */
@@ -153,10 +152,18 @@ const SanMartin = () => {
           />
         </Box>
 
-        <Box position={"absolute"}  height={"500px"}  sx={{bgColor:"#E4E1D5",  top: "1888px",
-              left: "50%",
-              transform: "translateX(-50%)", zIndex:100}} >
-hola
+        <Box
+          position={"absolute"}
+          height={"500px"}
+          sx={{
+            bgColor: "#E4E1D5",
+            top: "1888px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 100,
+          }}
+        >
+          hola
         </Box>
         <Box height={"856px"} mt={-2} mr={0}>
           <img
@@ -167,10 +174,9 @@ hola
             alt="foto de evento de 8M en San Martín"
           />
           {/* Aquí empieza el carrusel de imágenes */}
-        
+
           <FadingImage
             sx={{
-             
               top: "1888px",
               left: "50%",
               transform: "translateX(-50%)",
@@ -331,81 +337,81 @@ hola
           </Box>
         </Box>
 
-        <Box mt={"-4px"}>
+        <Box
+          height={"420px"}
+        mt={-1}
+        pt={4}
+        pb={4}
+          display={"flex"}
+          justifyContent={"center"}
+          bgcolor={"#656FC6"}
+        >
           <img
             style={{ objectFit: "cover" }}
-            height={"458px"}
-            width={"100%"}
+            height={"364px"}
+            width={"74%"}
             src="/sanMartin/juntasMobile.png"
             alt="libros de 8M"
           />
         </Box>
 
-        <Box bgcolor={"#E4E1D5"} height={"300px"} mt={-2} mr={0}>
+        <Box   mt={0} mr={0}>
           {/* Aquí empieza el carrusel de imágenes */}
           <FadingImage
             sx={{
               top: "978px",
               left: "50%",
               transform: "translateX(-50%)",
-
+              width: "80%",
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
-            <img width={"300px"} src="sanMartin/sanMartin3.png" alt="" />
+            <img width={"100%"} src="sanMartin/sanMartin3.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
               top: "978px",
               left: "50%",
+              width:"80%",
               transform: "translateX(-50%)",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
-            <img width={"300px"} src="sanMartin/sanMartin4.png" alt="" />
+            <img width={"100%"} src="sanMartin/sanMartin4.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
               top: "978px",
               left: "50%",
+              width:"80%",
               transform: "translateX(-50%)",
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
-            <img width={"300px"} src="sanMartin/sanMartin5.png" alt="" />
+            <img width={"100%"} src="sanMartin/sanMartin5.png" alt="" />
           </FadingImage>
           <FadingImage
             sx={{
               top: "978px",
               left: "50%",
+              width:"80%",
               transform: "translateX(-50%)",
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
-            <img width={"300px"} src="sanMartin/sanMartin6.png" alt="" />
+            <img width={"100%"} src="sanMartin/sanMartin6.png" alt="" />
           </FadingImage>
         </Box>
 
+        
         <Box>
-          {[0, 1].map((index) => (
-            <Box
-              key={index}
-              sx={{
-                textAlign: "center",
-                width:"100%",
-                bgcolor: imageSets[imageIndices[index]][index].bgColor,
-              }}
-            >
-              <img
-                width={"100%"}
-                src={imageSets[imageIndices[index]][index].src}
-                alt=""
-              />
-            </Box>
-          ))}
-        </Box>
-        <Box>
-          <img width={"100%"} height={"320px"} style={{objectFit:"cover"}} src="/sanMartin/juntasMobile2.png" alt="" />
+          <img
+            width={"100%"}
+            height={"320px"}
+            style={{ objectFit: "cover" }}
+            src="/sanMartin/juntasMobile2.png"
+            alt=""
+          />
         </Box>
       </Hidden>
     </>

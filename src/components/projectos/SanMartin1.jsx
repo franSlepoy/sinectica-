@@ -547,22 +547,54 @@ const SanMartin1 = () => {
 
         {/* Aquí empieza el carrusel de imágenes */}
 
-        <Box mt={-1}>
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            src="sanMartin1/sanMartin1-13.png"
-            alt=""
-          />
-        </Box>
-        <Box mt={-1}>
-          <img
-            width={"100%"}
-            style={{ objectFit: "cover" }}
-            src="sanMartin1/sanMartin1-19.png"
-            alt=""
-          />
-        </Box>
+        {/* Aquí empieza el carrusel de imágenes */}
+        <FadingImage3
+            sx={{
+              opacity: currentImage === 0 ? 1 : 0,
+              width: "100%",
+              top:"1100px"
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"300px"}
+              style={{ objectFit: "cover" }}
+              src="sanMartin1/sanMartin1-17.png"
+              alt=""
+            />
+          </FadingImage3>
+          <FadingImage3
+            sx={{
+              opacity: currentImage === 1 ? 1 : 0,
+              width: "100%",
+              top:"1100px"
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"300px"}
+              style={{ objectFit: "cover" }}
+              src="sanMartin1/sanMartin1-18.png"
+              alt=""
+            />
+          </FadingImage3>
+
+          <FadingImage3
+            sx={{
+              opacity: currentImage === 3 ? 1 : 0,
+              width: "100%",
+              top:"1100px"
+            }}
+          >
+            <img
+              width={"100%"}
+              height={"300px"}
+              style={{ objectFit: "cover" }}
+              src="sanMartin1/sanMartin1-19.png"
+              alt=""
+            />
+          </FadingImage3>
+       
 
        
       </Hidden>

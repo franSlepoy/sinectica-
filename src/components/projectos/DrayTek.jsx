@@ -320,7 +320,7 @@ const DrayTek = () => {
       <Hidden smUp>
         <NavMobileAzul />
         <Box
-          width={"80%"}
+          width={"100%"}
           m={"auto"}
           display={"flex"}
           justifyContent={"center"}

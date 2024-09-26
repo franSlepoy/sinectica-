@@ -978,7 +978,11 @@ const PSA = () => {
           />
         </Box>
 
-        <Box position={"absolute"} ml={"2%"} p={"8%"} top={"2658px"}>
+        <Box  sx={{
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }} position={"absolute"} width={"80%"}  top={"2658px"}>
           <img width={"100%"} src="/psa/psa19.png" alt="" />
         </Box>
       </Hidden>

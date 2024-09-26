@@ -1,5 +1,5 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Projectos from "./components/projectos/Projectos";
 import Honda from "./components/projectos/Honda";
 import Honda1 from "./components/projectos/Honda1";
@@ -13,13 +13,25 @@ import SanMartin from "./components/projectos/SanMartin";
 import SanMartin1 from "./components/projectos/SanMartin1";
 import Tyme from "./components/projectos/Tyme";
 import Home from "./components/Home";
-import "./i18nextConfig";
 import Gramon from "./components/projectos/Gramon";
+import "./i18nextConfig";
+
+// ScrollToTop integrado en App.jsx
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Resetea el scroll al top cuando cambia la ruta
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <ScrollToTop /> {/* Resetea el scroll al cambiar de página */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/proyectos" element={<Projectos />} />
@@ -27,10 +39,7 @@ const App = () => {
           <Route path="/honda1" element={<Honda1 />} />
           <Route path="/IMB" element={<Imb />} />
           <Route path="/TNyPlatex" element={<Tn />} />
-          <Route
-            path="/MinisterioDeObrasPublicas"
-            element={<ObrasPublicas />}
-          />
+          <Route path="/MinisterioDeObrasPublicas" element={<ObrasPublicas />} />
           <Route path="/PSA" element={<PSA />} />
           <Route path="/DrayTek" element={<DrayTek />} />
           <Route path="/Franca" element={<Franca />} />
