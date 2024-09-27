@@ -163,14 +163,17 @@ export default function ProyectosMobile() {
     : projectsData;
 
   return (
-    <Box m={"auto"} mt={12} width={"70%"} >
+    <Box m={"auto"}  mt={16} width={"70%"} >
       <Box
-        sx={{ width: "100%" }}
+        sx={{ width: "70%" }}
         display="flex"
         justifyContent="space-between"
         flexWrap="nowrap"
+        position={"fixed"}
+        zIndex={30}
         mb={2}
-        ml={-1}
+        ml={-2}
+
       >
         {["Digital", "Editorial", "Institucional"].map((category) => (
           
@@ -188,10 +191,10 @@ export default function ProyectosMobile() {
         ))}
       </Box>
 
-      <Box mt={2} display="flex" flexDirection="column">
+      <Box pt={6}  display="flex" flexDirection="column">
         {filteredProjects.map((project) => (
-          <Link to={project.link} key={project.id}>
-            <ProjectCard>
+          <Link  to={project.link} key={project.id}>
+            <ProjectCard mt={2}>
               <ProjectImage src={project.img2} alt={project.title} />
               {/* <ProjectTitle variant="subtitle2">{project.title}</ProjectTitle> */}
             </ProjectCard>

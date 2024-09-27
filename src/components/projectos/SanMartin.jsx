@@ -152,19 +152,8 @@ const SanMartin = () => {
           />
         </Box>
 
-        <Box
-          position={"absolute"}
-          height={"500px"}
-          sx={{
-            bgColor: "#E4E1D5",
-            top: "1888px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            zIndex: 100,
-          }}
-        >
-          hola
-        </Box>
+      
+        
         <Box height={"856px"} mt={-2} mr={0}>
           <img
             style={{ objectFit: "cover" }}
@@ -350,7 +339,7 @@ const SanMartin = () => {
             style={{ objectFit: "cover" }}
             height={"364px"}
             width={"74%"}
-            src="/sanMartin/juntasMobile.png"
+            src="/sanMartin/juntasmobile.png"
             alt="libros de 8M"
           />
         </Box>

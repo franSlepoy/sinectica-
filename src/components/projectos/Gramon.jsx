@@ -179,7 +179,7 @@ const Gramon = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -187,37 +187,37 @@ const Gramon = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Laboratorio Gramon</strong>
+              {t("clienteProyectos")}: Laboratorio Gramon
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Diseño de identidad Megacistin</strong>
+              {t("proyecto")}: Diseño de identidad Megacistin
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2010</strong>
+              {t("fecha")}: 2010
             </Typography>
           </Box>
         </Box>
@@ -238,7 +238,7 @@ const Gramon = () => {
         <Box>
           <FadingImage
             sx={{
-              top: "1300px",
+              top: "610px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
@@ -248,7 +248,7 @@ const Gramon = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1300px",
+              top: "610px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
@@ -261,7 +261,7 @@ const Gramon = () => {
         <img width={"100%"}     style={{ objectFit: "cover" }}  src="/gramon/gramon7.png" alt="" />
         </Box>
         <Box position={"absolute"}  sx={{
-              top: "1490px",
+              top: "1398px",
               left: "50%",
               transform: "translateX(-50%)",
            

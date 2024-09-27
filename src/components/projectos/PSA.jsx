@@ -678,37 +678,37 @@ const PSA = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>PSA Peugeot Citroën</strong>
+              {t("clienteProyectos")}: PSA Peugeot Citroën
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+              {t("proyecto")}: Programa de comunicación interna
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "100",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2010 - 2020</strong>
+              {t("fecha")}:2010 - 2020
             </Typography>
           </Box>
         </Box>
@@ -752,14 +752,14 @@ const PSA = () => {
               top: "768px",
               left: "51.4%",
               transform: "translateX(-50%)",
-              width: "85%",
+              width: "320px",
               pb: 2,
 
               opacity: currentImage === 0 ? 1 : 0,
             }}
           >
             <img
-                width={"100%"}
+                width={"320px"}
                 height={"543px"}
                 src="/psa/psa3.png"
                 alt="PSA revista"
@@ -770,12 +770,12 @@ const PSA = () => {
               top: "768px",
               left: "51.4%",
               transform: "translateX(-50%)",
-              width: "85%",
+              width: "320px",
               opacity: currentImage === 1 ? 1 : 0,
             }}
           >
             <img
-                width={"100%"}
+                width={"320px"}
                 height={"543px"}
                 src="/psa/psa4.png"
                 alt="PSA revista"
@@ -786,12 +786,12 @@ const PSA = () => {
               top: "768px",
               left: "51.4%",
               transform: "translateX(-50%)",
-              width: "85%",
+              width: "320px",
               opacity: currentImage === 2 ? 1 : 0,
             }}
           >
             <img
-                 width={"100%"}
+                 width={"320px"}
                  height={"543px"}
                  src="/psa/psa3.png"
                  alt="PSA revista"
@@ -802,13 +802,13 @@ const PSA = () => {
               top: "768px",
               left: "51.4%",
               transform: "translateX(-50%)",
-              width: "85%",
+              width: "320px",
 
               opacity: currentImage === 3 ? 1 : 0,
             }}
           >
             <img
-                 width={"100%"}
+                 width={"320px"}
                  height={"543px"}
                  src="/psa/psa4.png"
                  alt="PSA revista"
@@ -819,7 +819,7 @@ const PSA = () => {
         <Box bgcolor={"#D7D6D5"}>
           <FadingImage
             sx={{
-              top: "1300px",
+              top: "1325px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
@@ -829,7 +829,7 @@ const PSA = () => {
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1300px",
+              top: "1325px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
@@ -841,24 +841,24 @@ const PSA = () => {
 
         <Box
           position={"absolute"}
-          top={"1600px"}
-          sx={{ left: "50%", transform: "translateX(-50%)" }}
+          top={"1640px"}
+          sx={{ }}
         >
           <img
             style={{ objectFit: "cover" }}
-            height={"160px"}
-            width={"280px"}
+            
+            width={"100%"}
             src="/psa/psa12.png"
             alt="públicidad de seguridad vial"
           />
         </Box>
 
         <Box>
-          <Box width={"100%"} height={"677px"}>
+          <Box width={"100%"} height={"677px"} >
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "1806px",
+                top: "1886px",
                 width: "100%",
                 /*   left: '75%',
           transform: 'translateX(-50%)', */
@@ -876,7 +876,7 @@ const PSA = () => {
             <FadingImage1
               sx={{
                 position: "absolute",
-                top: "1806px",
+                top: "1886px",
                 opacity: showSecondImage ? 1 : 0,
                 width: "100%",
               }}
@@ -892,46 +892,13 @@ const PSA = () => {
           </Box>
         </Box>
 
-        <Box position="absolute">
-          <FadingImage2
-            sx={{
-              opacity: showSecondImage ? 0 : 1,
-              top: "2200px",
-              left: 0,
-              right: 0,
-            }}
-          >
-            <img
-              width={"100%"}
-              style={{ objectFit: "cover" }}
-              height={"382px"}
-              src="/psa/psa16.png"
-              alt="imagenes de fondo, autos"
-            />
-          </FadingImage2>
-          <FadingImage2
-            sx={{
-              opacity: showSecondImage ? 1 : 0,
-              top: "2000px",
-              left: 0,
-              right: 0,
-            }}
-          >
-            <img
-              width={"100%"}
-              style={{ objectFit: "cover" }}
-              height={"382px"}
-              src="/psa/psa17.png"
-              alt="imagenes de fondo, autos"
-            />
-          </FadingImage2>
-        </Box>
+       
 
         <Box height="482px">
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 0 : 1,
-              top: "2450px",
+              top: "2560px",
               left: 0,
               right: 0,
             }}
@@ -947,7 +914,7 @@ const PSA = () => {
           <FadingImage2
             sx={{
               opacity: showSecondImage ? 1 : 0,
-              top: "2450px",
+              top: "2560px",
               left: 0,
               right: 0,
             }}
@@ -962,27 +929,13 @@ const PSA = () => {
           </FadingImage2>
         </Box>
 
-        <Box
-          position={"absolute"}
-          top={"2480px"}
-          sx={{
-            position: "absolute",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <img
-            width={"180px"}
-            src="/psa/psa18.png"
-            alt="Citroen Lounge, auto centrado"
-          />
-        </Box>
+        
 
         <Box  sx={{
             position: "absolute",
             left: "50%",
             transform: "translateX(-50%)",
-          }} position={"absolute"} width={"80%"}  top={"2658px"}>
+          }} position={"absolute"} width={"80%"}  top={"2788px"}>
           <img width={"100%"} src="/psa/psa19.png" alt="" />
         </Box>
       </Hidden>

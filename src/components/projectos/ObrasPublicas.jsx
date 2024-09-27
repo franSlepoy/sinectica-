@@ -2,7 +2,7 @@ import { Box, Hidden, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import NavBar from "../NavBar/NavBar";
+
 import NavBar1 from "../NavBar/NavBar1";
 import NavMobile from "../NavBar/NavMobile";
 
@@ -66,8 +66,7 @@ const ObrasPublicas = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}:{" "}
-              Ministerio de Obras Públicas
+              {t("clienteProyectos")}: Ministerio de Obras Públicas
             </Typography>
           </Box>
           <Box>
@@ -82,10 +81,8 @@ const ObrasPublicas = () => {
                 mt: 1,
               }}
             >
-              {t("proyecto")}:{" "}
-             
-                Plan de Obras públicas para el Desarrollo de la Nación
-             
+              {t("proyecto")}: Plan de Obras públicas para el Desarrollo de la
+              Nación
             </Typography>
           </Box>
           <Box>
@@ -153,9 +150,20 @@ const ObrasPublicas = () => {
           </Box>
           <Box
             position={"absolute"}
-            sx={{width:"70%", top: "2380px", left: "50%", transform: "translateX(-50%)" }}
+            sx={{
+              width: "70%",
+              top: "2380px",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
           >
-            <img width={"100%"} height={"720px"}  style={{ objectFit: "cover" }} src="/obrasPublicas/obras8.png" alt="libro" />
+            <img
+              width={"100%"}
+              height={"720px"}
+              style={{ objectFit: "cover" }}
+              src="/obrasPublicas/obras8.png"
+              alt="libro"
+            />
           </Box>
         </Box>
 
@@ -219,7 +227,6 @@ const ObrasPublicas = () => {
             alt="imágen autopistas"
           />
         </Box>
-       
 
         <Box
           sx={{
@@ -235,7 +242,7 @@ const ObrasPublicas = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -243,41 +250,38 @@ const ObrasPublicas = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}:{" "}
-              <strong>Ministerio de Obras Públicas</strong>
+              {t("clienteProyectos")}: Ministerio de Obras Públicas
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}:{" "}
-              <strong>
-                Plan de Obras públicas para el Desarrollo de la Nación
-              </strong>
+              {t("proyecto")}: Plan de Obras públicas para el Desarrollo de la
+              Nación
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2010 - 2020</strong>
+              {t("fecha")}: 2010 - 2020
             </Typography>
           </Box>
         </Box>
@@ -295,99 +299,112 @@ const ObrasPublicas = () => {
           <img
             width={"100%"}
             style={{ objectFit: "cover" }}
-            height={"305px"}
+            height={"298px"}
             src="/obrasPublicas/obras14.png"
             alt=""
           />
         </Box>
 
-        <Box  >
+        <Box>
           <FadingImage
             sx={{
-              top: "818px",
-              width: "80%",
+              top: "808px",
+              width: "300px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
             }}
           >
             <img
-              width={"100%"}
+              width={"300px"}
               src="/obrasPublicas/obras11.png"
               alt="PSA revista"
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "818px",
-              width: "80%",
+              top: "808px",
+              width: "300px",
               left: "50%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
             }}
           >
             <img
-              width={"100%"}
+              width={"300px"}
               src="/obrasPublicas/obras10.png"
               alt="PSA revista"
             />
           </FadingImage>
         </Box>
 
-        <Box mt={-5}  height={"300px"} width={"100%"} bgcolor={"#f6f8fa"}>
+        <Box mt={-5} height={"358px"} width={"100%"} bgcolor={"#f6f8fa"}>
           <FadingImage
             sx={{
-              top: "1114px",
-              width: "88%",
-              left: "50.5%",
+              top: "1054px",
+              bgcolor:"#f6f8fa",
+              zindex: -1,
+              width: "100%",
+
+              left: "50.0%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 0 : 1,
             }}
           >
             <img
               width={"100%"}
-              
-              src="/obrasPublicas/obras16.png"
+              src="/obrasPublicas/obrasMobile1.png"
               alt="PSA revista"
             />
           </FadingImage>
           <FadingImage
             sx={{
-              top: "1114px",
-              width: "88%",
-              left: "50.5%",
+              top: "1054px",
+              bgcolor:"#f6f8fa",
+              width: "100%",
+              left: "50.0%",
               transform: "translateX(-50%)",
               opacity: showSecondImage ? 1 : 0,
             }}
           >
             <img
               width={"100%"}
-              
-              src="/obrasPublicas/obras15.png"
+              src="/obrasPublicas/obrasMobile2.png"
               alt="PSA revista"
             />
           </FadingImage>
         </Box>
 
-        <Box position={"absolute"} top={"1402px"}>
-          <img
-            height={"197px"}
-            width={"100%"}
-            src="/obrasPublicas/obras4.png"
-            alt=""
-          />
-        </Box>
         <Box
           position={"absolute"}
-          top={"1642px"}
-          sx={{ pb: 4, width:"70%", left: "50.5%", transform: "translateX(-50%)" }}
+          display={"flex"}
+          justifyContent={"center"}
+          width={"100%"}
+          top={"1340px"}
+          height={"358px"}
+          bgcolor={"#f6f8fa"}
         >
-          <img
-            
-            width={"100%"}
-            src="/obrasPublicas/obras7.png"
-            alt=""
-          />
+          <Box>
+            <img
+              height={"357px"}
+              width={"300px"}
+              src="/obrasPublicas/obrasMobile3.png"
+              alt=""
+            />
+          </Box>
+        </Box>
+
+        <Box
+          position={"absolute"}
+          top={"1742px"}
+          sx={{
+            pb: 4,
+            width: "70%",
+            left: "50.5%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <img width={"100%"} src="/obrasPublicas/obras7.png" alt="" />
         </Box>
       </Hidden>
     </>

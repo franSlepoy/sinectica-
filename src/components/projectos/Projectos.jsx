@@ -7,6 +7,7 @@ import WithLoader from "../WithLoader";
 import NavMobile from "../NavBar/NavMobile";
 import ProyectosMobile from "./ProyectosMobile";
 import NavMobileAzul from "../NavBar/NavMobileAzul";
+import NavMobileProyectos from "../NavBar/NavMobileProyectos";
 
 // Estilos para las imágenes de los proyectos
 const ProjectCard = styled(Box)`
@@ -262,12 +263,12 @@ export default function Proyectos() {
       </Box>
     </Hidden>
 <Hidden smUp>
- <NavMobileAzul/> 
+ <NavMobileProyectos/> 
 <ProyectosMobile/>
-<Box position={"fixed"} top={"50%"} left={"4%"}>
+<Box position={"fixed"} top={"50%"} left={"6%"}>
         <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno2.png" alt="" />
       </Box>
-      <Box position={"fixed"} top={"50%"} right={"4%"}>
+      <Box position={"fixed"} top={"50%"} right={"6%"}>
         <img height={"110px"} style={{objectFit:"cover"}} src="/proyectos/diseno1.png" alt="" />
       </Box>
 </Hidden>

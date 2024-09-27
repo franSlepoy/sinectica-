@@ -317,9 +317,9 @@ const honda1 = () => {
         >
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -327,37 +327,37 @@ const honda1 = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Honda Argentina</strong>
+              {t("clienteProyectos")}: Honda Argentina
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
+              {t("proyecto")}: Programa de comunicación interna
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2017 - 2020</strong>
+              {t("fecha")}: 2017 - 2020
             </Typography>
           </Box>
         </Box>

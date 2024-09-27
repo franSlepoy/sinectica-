@@ -106,7 +106,7 @@ const DrayTek = () => {
 
   return (
     <>
-      <Hidden lgDown>
+      <Hidden mdDown>
         <NavBar1 />
         <Box>
           <img
@@ -317,7 +317,7 @@ const DrayTek = () => {
         </Box>
       </Hidden>
 
-      <Hidden smUp>
+      <Hidden mdUp>
         <NavMobileAzul />
         <Box
           width={"100%"}
@@ -381,47 +381,47 @@ const DrayTek = () => {
         >
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#202B61",
                 ml: 2,
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Draytek</strong>
+              {t("clienteProyectos")}: Draytek
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Página web</strong>
+              {t("proyecto")}: Página web
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2024</strong>
+              {t("fecha")}: 2024
             </Typography>
           </Box>
         </Box>

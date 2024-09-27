@@ -140,46 +140,46 @@ const Tn = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "black",
+                color: "#202B61",
                 ml: 2,
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>TN Platex</strong>
+              {t("clienteProyectos")}:TN Platex
             </Typography>
           </Box>
 
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>App de gestión documental</strong>
+              {t("proyecto")}: App de gestión documental
             </Typography>
           </Box>
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color: "#202B61",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2023</strong>
+              {t("fecha")}: 2023
             </Typography>
           </Box>
         </Box>

@@ -414,48 +414,48 @@ const Tyme = () => {
         >
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "white",
+                color:"white",
                 ml: 2,
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Tyme Consulting</strong>
+              {t("clienteProyectos")}: Tyme Consulting
             </Typography>
           </Box>
 
           <Box>
             <Typography
-              sx={{
+               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color:"white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Web</strong>
+              {t("proyecto")}: Web
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#61FB65",
+                color:"white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("fecha")}: <strong>2024</strong>
+              {t("fecha")}: 2024
             </Typography>
           </Box>
         </Box>

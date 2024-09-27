@@ -9,7 +9,7 @@ const NavMobile = () => {
   };
   return (
     <>
-      <Box position={"fixed"} left={"15%"} top={40} zIndex={20}>
+      <Box width={"100%"} position={"fixed"} left={"15%"} top={40} zIndex={20}>
         {/* <Typography
           sx={{
             fontFamily: "acumin-pro",

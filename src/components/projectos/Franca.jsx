@@ -342,7 +342,22 @@ const Franca = () => {
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "100",
+                fontWeight: "400",
+                fontSize: "18px",
+                lineHeight: "21.78px",
+                color: "white",
+                ml: 2,
+                mt: 1,
+              }}
+            >
+              {t("clienteProyectos")}: Franca
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontFamily: "acumin-pro",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
                 color: "white",
@@ -350,37 +365,22 @@ const Franca = () => {
                 mt: 2,
               }}
             >
-              {t("clienteProyectos")}: <strong>Franca</strong>
+              {t("proyecto")}: Programa de comunicación interna
             </Typography>
           </Box>
           <Box>
             <Typography
               sx={{
                 fontFamily: "acumin-pro",
-                fontWeight: "bold",
+                fontWeight: "400",
                 fontSize: "18px",
                 lineHeight: "21.78px",
-                color: "#52BAFF",
+                color: "white",
                 ml: 2,
                 mt: 1,
               }}
             >
-              {t("proyecto")}: <strong>Programa de comunicación interna</strong>
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              sx={{
-                fontFamily: "acumin-pro",
-                fontWeight: "",
-                fontSize: "18px",
-                lineHeight: "21.78px",
-                color: "#61FB65",
-                ml: 2,
-                mt: 1,
-              }}
-            >
-              {t("fecha")}: <strong>E-Commerce</strong>
+              {t("fecha")}:E-Commerce
             </Typography>
           </Box>
         </Box>
